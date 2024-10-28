@@ -16,4 +16,25 @@
     color: $nav-color;
     border: none;
 }
-@mixin 
+@mixin imgcenter{
+    padding: 16%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@mixin icon3{
+    width: 100px;
+  
+}
+@mixin space-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@mixin space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
