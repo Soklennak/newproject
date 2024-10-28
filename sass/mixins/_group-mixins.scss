@@ -16,4 +16,12 @@
     color: $nav-color;
     border: none;
 }
-@mixin 
+@mixin imgcenter{
+    padding: 16%;
+    background-size: cover;
+    background-position: center 0%;
+}
+@mixin nav-bar {
+    display: flex;
+    border: 1px solid;
+}
