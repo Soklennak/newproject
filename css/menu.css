@@ -171,12 +171,13 @@ body {
 
 .container {
   background-image: url(https://i.pinimg.com/1200x/ad/49/03/ad4903fbaa98df05e0f76f34ca382652.jpg);
-  padding: 16%;
+  padding: 10%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
+<<<<<<< HEAD
 }
 .container h1 {
   font-size: 56px;
@@ -222,4 +223,6 @@ body {
 }
 .title h3 {
   font-size: 24px;
+=======
+>>>>>>> soklen
 }/*# sourceMappingURL=menu.css.map */

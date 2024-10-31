@@ -75,12 +75,19 @@ body .soup {
 body .product-food {
   height: auto;
   width: 70%;
+<<<<<<< HEAD
   margin: 70px auto 0 auto;
   display: flex;
   align-content: flex-end;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 56px;
+=======
+  margin: 150 auto 0 auto;
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+>>>>>>> soklen
 }
 body .product-food .product-card {
   height: auto;
@@ -89,17 +96,29 @@ body .product-food .product-card {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
   display: flex;
+<<<<<<< HEAD
   align-items: center;
+=======
+  align-content: center;
+>>>>>>> soklen
   justify-content: center;
   flex-direction: column;
   padding-bottom: 25px;
   background-color: white;
 }
+<<<<<<< HEAD
 body .product-food .product-card .product-img {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 45px;
+=======
+.soup .product-food .product-card .product-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+>>>>>>> soklen
   position: relative;
   background: #fff;
   z-index: 2;
@@ -225,6 +244,7 @@ body .product-food .product-card:hover {
 .footer .end-footer .canteens {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   width: 100%;
+<<<<<<< HEAD
   text-align: center;
   padding: 12px 0;
 }
@@ -262,6 +282,14 @@ body .product-food .product-card:hover {
 .menu-of-food ul li a:hover {
   background: #E89909;
   color: #FFFFFF;
+=======
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
+  z-index: -1;
+  border-radius: 15px 15px 40px 0;
+>>>>>>> soklen
 }
 
 * {
@@ -277,12 +305,13 @@ body {
 
 .container {
   background-image: url(https://i.pinimg.com/1200x/ad/49/03/ad4903fbaa98df05e0f76f34ca382652.jpg);
-  padding: 16%;
+  padding: 10%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
+<<<<<<< HEAD
 }
 .container h1 {
   font-size: 56px;
@@ -325,4 +354,6 @@ body {
   padding: 8px 18px;
   border: none;
   border-radius: 50px;
+=======
+>>>>>>> soklen
 }/*# sourceMappingURL=snakeanddrink.css.map */
