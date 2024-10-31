@@ -152,7 +152,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
-<<<<<<< HEAD
 }
 .container h1 {
   font-size: 56px;
@@ -224,7 +223,7 @@ body {
 
 .content {
   background-image: url(https://img.freepik.com/premium-photo/white-background-with-food-greenery-around-border_1174990-15609.jpg?w=900);
-  padding: 16%;
+  padding: 10%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -283,6 +282,4 @@ body {
 }
 .section .information-schedule .information-time p, .section .information-schedule .information-time h5 {
   margin-left: 40px;
-=======
->>>>>>> soklen
 }/*# sourceMappingURL=about.css.map */

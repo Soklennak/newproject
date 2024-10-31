@@ -36,12 +36,9 @@ nav .nav-right .login span, nav .nav-right .login h4 {
   padding-left: 4px;
   padding-top: 4px;
 }
-<<<<<<< HEAD
 nav .nav-right .login:hover {
   background-color: rgba(0, 0, 0, 0.049);
 }
-=======
->>>>>>> soklen
 nav .nav-right .icon-right {
   margin-top: 4px;
 }
@@ -55,12 +52,9 @@ nav ul li {
 nav ul li a {
   color: black;
 }
-<<<<<<< HEAD
 nav ul li .color-page {
   color: orange;
 }
-=======
->>>>>>> soklen
 nav .logo img {
   width: 50px;
 }
@@ -68,7 +62,6 @@ nav a:hover {
   color: #E89909;
 }
 
-<<<<<<< HEAD
 body {
   margin: 0;
   padding: 0;
@@ -243,12 +236,76 @@ body .product-food .product-card:hover {
   border: 3px solid rgba(234, 12, 12, 0.8);
   border-radius: 10px;
   padding: 8px 20px;
-=======
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #FFFFFF;
+  justify-content: space-between;
+}
+nav .nav-right {
+  display: flex;
+  gap: 12px;
+}
+nav .nav-right .change-language {
+  display: flex;
+  border: 1px solid;
+  height: 32px;
+  border-radius: 12px;
+  width: 108px;
+}
+nav .nav-right .change-language span {
+  margin-top: 4px;
+}
+nav .nav-right .change-language #language {
+  border: none;
+}
+nav .nav-right .login {
+  display: flex;
+  border: 1px solid;
+  height: 32px;
+  margin-bottom: 4px;
+  border-radius: 50px;
+  width: 94px;
+  gap: 4px;
+  align-self: center;
+}
+nav .nav-right .login span, nav .nav-right .login h4 {
+  padding-left: 4px;
+  padding-top: 4px;
+}
+nav .nav-right .login:hover {
+  background-color: rgba(0, 0, 0, 0.049);
+}
+nav .nav-right .icon-right {
+  margin-top: 4px;
+}
+nav ul {
+  display: flex;
+  gap: 36px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: black;
+}
+nav ul li .color-page {
+  color: orange;
+}
+nav .logo img {
+  width: 50px;
+}
+nav a:hover {
+  color: #E89909;
+}
+
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
->>>>>>> soklen
 }
 
 body {

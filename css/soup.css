@@ -145,19 +145,12 @@ body .soup {
 body .product-food {
   height: auto;
   width: 70%;
-<<<<<<< HEAD
   margin: 70px auto 0 auto;
   display: flex;
   align-content: flex-end;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 56px;
-=======
-  margin: 150 auto 0 auto;
-  display: flex;
-  align-self: flex-end;
-  justify-content: space-between;
->>>>>>> soklen
 }
 body .product-food .product-card {
   height: auto;
@@ -166,29 +159,17 @@ body .product-food .product-card {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
   display: flex;
-<<<<<<< HEAD
   align-items: center;
-=======
-  align-content: center;
->>>>>>> soklen
   justify-content: center;
   flex-direction: column;
   padding-bottom: 25px;
   background-color: white;
 }
-<<<<<<< HEAD
 body .product-food .product-card .product-img {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 45px;
-=======
-.soup .product-food .product-card .product-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 35px;
->>>>>>> soklen
   position: relative;
   background: #fff;
   z-index: 2;
@@ -236,7 +217,6 @@ body .product-food .product-card .product-text::before {
   border-radius: 40px 0 0 0;
   z-index: -1;
 }
-<<<<<<< HEAD
 body .product-food .product-card button {
   background-image: linear-gradient(to bottom, #F0772C, #E89909);
   outline: none;
@@ -282,18 +262,6 @@ body .product-food .product-card:hover {
 .menu-of-food ul li a:hover {
   background: #E89909;
   color: #FFFFFF;
-=======
-.soup .product-food .product-card .product-img::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
-  z-index: -1;
-  border-radius: 15px 15px 40px 0;
->>>>>>> soklen
 }
 
 * {
@@ -315,7 +283,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
-<<<<<<< HEAD
 }
 .container h1 {
   font-size: 56px;
@@ -358,6 +325,4 @@ body {
   padding: 8px 18px;
   border: none;
   border-radius: 50px;
-=======
->>>>>>> soklen
 }/*# sourceMappingURL=soup.css.map */
