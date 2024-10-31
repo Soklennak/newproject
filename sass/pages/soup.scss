@@ -66,3 +66,15 @@ body {
     
 
 }
+
+.menu-of-food {
+    ul {
+      li {
+        .color-soup{
+            background-image: linear-gradient(to bottom, $fry-color, $soup-color);
+            color: $nav-color;
+            }
+            
+        }
+    }
+}

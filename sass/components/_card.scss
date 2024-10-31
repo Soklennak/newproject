@@ -57,7 +57,7 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            background-image: linear-gradient(to bottom, $fry-color, $soup-color);
+            background-image: linear-gradient(to bottom,$soup-color);
             border-radius: 15px 15px 40px 0;
             z-index: -1;
           }
@@ -70,7 +70,7 @@ body {
           z-index: 2;
   
           h2 {
-            background-image: linear-gradient(to bottom, $fry-color, $soup-color);
+            background-image: linear-gradient(to bottom,$soup-color);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-align: center;
@@ -96,7 +96,7 @@ body {
         }
   
         button {
-          background-image: linear-gradient(to bottom, $fry-color, $soup-color);
+          background-image: linear-gradient(to bottom,$soup-color);
           outline: none;
           border: none;
           border-radius: 10px;

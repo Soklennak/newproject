@@ -1,16 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   background: #FFFFFF;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 12px;
 }
 nav .nav-right .change-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid;
   height: 32px;
@@ -24,6 +34,8 @@ nav .nav-right .change-language #language {
   border: none;
 }
 nav .nav-right .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid;
   height: 32px;
@@ -31,7 +43,8 @@ nav .nav-right .login {
   border-radius: 50px;
   width: 94px;
   gap: 4px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 nav .nav-right .login span, nav .nav-right .login h4 {
   padding-left: 4px;
@@ -44,6 +57,8 @@ nav .nav-right .icon-right {
   margin-top: 4px;
 }
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 36px;
 }
@@ -66,7 +81,8 @@ nav a:hover {
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 body .soup {
   height: 100%;
@@ -76,10 +92,16 @@ body .product-food {
   height: auto;
   width: 70%;
   margin: 70px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: flex-end;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 56px;
 }
 body .product-food .product-card {
@@ -87,18 +109,34 @@ body .product-food .product-card {
   width: calc(33.33% - 40px);
   cursor: pointer;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 25px;
   background-color: white;
 }
 body .product-food .product-card .product-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 45px;
   position: relative;
   background: #fff;
@@ -115,7 +153,8 @@ body .product-food .product-card .product-img::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, #F0772C, #E89909);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909));
+  background-image: linear-gradient(to bottom, #E89909);
   border-radius: 15px 15px 40px 0;
   z-index: -1;
 }
@@ -126,7 +165,8 @@ body .product-food .product-card .product-text {
   z-index: 2;
 }
 body .product-food .product-card .product-text h2 {
-  background-image: linear-gradient(to bottom, #F0772C, #E89909);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909));
+  background-image: linear-gradient(to bottom, #E89909);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -148,7 +188,8 @@ body .product-food .product-card .product-text::before {
   z-index: -1;
 }
 body .product-food .product-card button {
-  background-image: linear-gradient(to bottom, #F0772C, #E89909);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909));
+  background-image: linear-gradient(to bottom, #E89909);
   outline: none;
   border: none;
   border-radius: 10px;
@@ -160,13 +201,18 @@ body .product-food .product-card button {
   width: 90%;
 }
 body .product-food .product-card button:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px 0;
+          box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px 0;
 }
 body .product-food .product-card {
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 body .product-food .product-card:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .footer {
@@ -174,6 +220,8 @@ body .product-food .product-card:hover {
 }
 .footer .start-footer {
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 60px;
 }
@@ -182,6 +230,8 @@ body .product-food .product-card:hover {
   margin: 24px 0;
 }
 .footer .start-footer .keep-in-touch .continue {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .footer .start-footer .keep-in-touch .continue .btn-one input {
@@ -217,18 +267,30 @@ body .product-food .product-card:hover {
   border-bottom: 2px solid;
 }
 .footer .end-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .footer .end-footer .canteens {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   width: 100%;
   text-align: center;
   padding: 12px 0;
 }
 .footer .end-footer .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 32px;
   margin: 24px 0;
@@ -243,10 +305,17 @@ body .product-food .product-card:hover {
   padding: 20px;
 }
 .menu-of-food ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .menu-of-food ul li {
   list-style: none;
@@ -277,10 +346,9 @@ body {
 
 .container {
   background-image: url(https://i.pinimg.com/1200x/ad/49/03/ad4903fbaa98df05e0f76f34ca382652.jpg);
-  padding: 10%;
+  padding: 16%;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center 0%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -288,15 +356,19 @@ body {
   font-size: 56px;
 }
 .container p {
-  font-size: 12px;
+  font-size: 24px;
 }
 .container .search-food {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #FFFFFF;
   width: 50%;
   height: 6vh;
   border-radius: 50px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 48px;
 }
 .container .search-food input {
@@ -316,8 +388,12 @@ body {
 }
 
 .btn-seemore {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 24px 0;
   margin-left: 50%;
   background: #E89909;
@@ -325,9 +401,6 @@ body {
   padding: 8px 18px;
   border: none;
   border-radius: 50px;
-<<<<<<< HEAD
-}/*# sourceMappingURL=snakeanddrink.css.map */
-=======
 }
 
 .menu-of-food ul li .color-snack {
@@ -335,4 +408,3 @@ body {
   background-image: linear-gradient(to bottom, #F0772C, #E89909);
   color: #FFFFFF;
 }
->>>>>>> e43af2e684dde2e4884ad7d0238e8d53cd2d694d
