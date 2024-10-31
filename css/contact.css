@@ -68,6 +68,9 @@ nav ul li {
 nav ul li a {
   color: black;
 }
+nav ul li .color-page {
+  color: orange;
+}
 nav .logo img {
   width: 50px;
 }

@@ -68,6 +68,9 @@ nav ul li {
 nav ul li a {
   color: black;
 }
+nav ul li .color-page {
+  color: orange;
+}
 nav .logo img {
   width: 50px;
 }
@@ -244,7 +247,7 @@ body {
   border-radius: 20px;
   background: white;
   width: 90%;
-  height: 120vh;
+  height: 100vh;
   margin: auto;
 }
 .main .image-main img {
@@ -274,6 +277,7 @@ body {
   width: 90%;
   height: 600px;
   margin: auto;
+  padding: 3%;
 }
 .content .schedule-background h2 {
   text-align: center;
@@ -294,9 +298,11 @@ body {
   width: 60%;
   font-size: 24px;
   text-align: center;
+  margin-top: 32px;
 }
 .content .schedule-background .schedule .time p {
   width: 80%;
+  margin-top: 24px;
 }
 
 .section {

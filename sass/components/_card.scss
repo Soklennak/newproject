@@ -57,7 +57,7 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
+            background-image: linear-gradient(to bottom, $fry-color, $soup-color);
             border-radius: 15px 15px 40px 0;
             z-index: -1;
           }
@@ -65,12 +65,12 @@ body {
   
         .product-text {
           padding: 35px 30px 0 30px;
-          background: #38ed7c;
+          background: $soup-color;
           position: relative;
           z-index: 2;
   
           h2 {
-            background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
+            background-image: linear-gradient(to bottom, $fry-color, $soup-color);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-align: center;
@@ -96,7 +96,7 @@ body {
         }
   
         button {
-          background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
+          background-image: linear-gradient(to bottom, $fry-color, $soup-color);
           outline: none;
           border: none;
           border-radius: 10px;
@@ -111,6 +111,14 @@ body {
           box-shadow:rgba(0,0,0,0.3) 0 5px 15px 0;
         }
       }
+
+      .product-card {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .product-card:hover {
+        transform: scale(1.05);
+      }
+     
     }
   }
   
