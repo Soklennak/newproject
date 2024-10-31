@@ -1,0 +1,21 @@
+// responsive in teblet
+
+// about page
+
+
+@media screen and (min-width:426px) and (max-width:834px) {
+    .footer{
+
+        .start-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .keep-in-touch, .can-contact,.find-us-in-here{
+                width: 30%;
+            }
+
+        }
+    }
+        
+}

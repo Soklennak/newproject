@@ -118,7 +118,29 @@ body {
       .product-card:hover {
         transform: scale(1.05);
       }
+      .color-card-fry {
+        .product-text h2,
+        .product-img::before,
+        button, .color-card-fry
+        .product-text h2 {
+          background-image: linear-gradient(to bottom, $fry-color);
+        }
+        .product-text {
+          background: $fry-color;
+        }
      
-    }
+      }
+      .color-card-snack {
+        .product-text h2,
+        .product-img::before,
+        button, .color-card-snack
+        .product-text h2 {
+          background-image: linear-gradient(to bottom, $snake-color);
+        }
+        .product-text {
+          background: $snake-color;
+        }
+     
+      }
   }
-  
+}

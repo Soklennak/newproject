@@ -214,7 +214,44 @@ body .product-food .product-card:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+body .product-food .color-card-fry .product-text h2,
+body .product-food .color-card-fry .product-img::before,
+body .product-food .color-card-fry button, body .product-food .color-card-fry .color-card-fry .product-text h2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF8214));
+  background-image: linear-gradient(to bottom, #FF8214);
+}
+body .product-food .color-card-fry .product-text {
+  background: #FF8214;
+}
+body .product-food .color-card-snack .product-text h2,
+body .product-food .color-card-snack .product-img::before,
+body .product-food .color-card-snack button, body .product-food .color-card-snack .color-card-snack .product-text h2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFAD50));
+  background-image: linear-gradient(to bottom, #FFAD50);
+}
+body .product-food .color-card-snack .product-text {
+  background: #FFAD50;
+}
 
+@media screen and (min-width: 426px) and (max-width: 834px) {
+  .footer .start-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .start-footer .keep-in-touch, .footer .start-footer .can-contact, .footer .start-footer .find-us-in-here {
+    width: 30%;
+  }
+}
 .footer {
   background: #FFFFFF;
 }
@@ -242,7 +279,7 @@ body .product-food .product-card:hover {
   border: none;
   height: 40px;
   margin-left: 4px;
-  background: rgba(234, 12, 12, 0.8);
+  background: rgba(226, 20, 20, 0.937);
   color: #FFFFFF;
   padding: 0 20px;
 }
@@ -296,7 +333,7 @@ body .product-food .product-card:hover {
   margin: 24px 0;
 }
 .footer .end-footer .end .sign-up {
-  border: 3px solid rgba(234, 12, 12, 0.8);
+  border: 3px solid rgba(226, 20, 20, 0.937);
   border-radius: 10px;
   padding: 8px 20px;
 }
@@ -346,9 +383,10 @@ body {
 
 .container {
   background-image: url(https://i.pinimg.com/1200x/ad/49/03/ad4903fbaa98df05e0f76f34ca382652.jpg);
-  padding: 16%;
+  padding: 10%;
   background-size: cover;
-  background-position: center 0%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -356,7 +394,7 @@ body {
   font-size: 56px;
 }
 .container p {
-  font-size: 24px;
+  font-size: 20px;
 }
 .container .search-food {
   display: -webkit-box;
@@ -404,7 +442,7 @@ body {
 }
 
 .menu-of-food ul li .color-snack {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#F0772C), to(#E89909));
-  background-image: linear-gradient(to bottom, #F0772C, #E89909);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF8214), to(#E89909));
+  background-image: linear-gradient(to bottom, #FF8214, #E89909);
   color: #FFFFFF;
 }
