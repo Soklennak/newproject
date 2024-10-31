@@ -7,8 +7,9 @@
 @mixin button {
     background: $soup-color;
     color: $nav-color;
-    padding: 8px 24px;
+    padding: 8px 18px;
     border: none;
+    border-radius: 50px;
 }
 
 @mixin buttonhover {
