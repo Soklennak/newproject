@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/main.scss"
-    ],
-    "names": [],
-    "file": "main.min.css"
-}
+{"version":3,"sourceRoot":"","sources":["../sass/main.scss","../sass/components/_nav.scss","../sass/components/_variable.scss","../sass/mixins/_group-mixins.scss"],"names":[],"mappings":"AAOQ,6LCLR,IACI,aACA,mBACA,uBACA,aACA,WCPQ,KFQZ,KACI,WERS,QFST,WACA,aAEJ,OACI,aACA,8QACA,YACA,sBACA,2BACA,4BACA,aACA,sBACA,mBGaA,aACA,mBACA,8BACA,mBHNG,mBACA,YACA,UACA,iBACA,yBAbC,yBACI,YACA,UACA,kBACA,YACA,aASL,uBACC,YACA,YACA,YACA,mBACA,WExCI,QF0CL,8CACC","file":"main.min.css"}
