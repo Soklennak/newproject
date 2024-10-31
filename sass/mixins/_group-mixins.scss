@@ -16,17 +16,28 @@
     color: $nav-color;
     border: none;
 }
+// transition
+@mixin hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
+}
+
+@mixin nav-bar {
+    display: flex;
+    border: 1px solid;
+}
 @mixin imgcenter{
-    padding: 16%;
+    padding: 10%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 @mixin icon3{
-    width: 100px;
+    width: 200px;
+    height: 200px;
   
 }
-@mixin space-around{
+@mixin space-evenly{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -38,3 +49,47 @@
     justify-content:space-between;
     align-items: center;
 }
+@mixin colum {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+// /home 
+@mixin iconwidth{
+    width: 250px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+@mixin imgdriks{
+    width: 150px;
+    height: 150px;
+    
+}
+@mixin iconone{
+    width: 300px;
+    height: 200px;
+    background: $fry-color;
+    @include center; 
+    border-radius: 25px; 
+    
+}
+@mixin icontext{
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+    background: $fry-color;
+    @include center; 
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+@mixin buttoncard{
+    @include center;
+    background: $nav-color;
+    width: 100%;
+    height: 40%;
+}
+
