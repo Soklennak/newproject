@@ -78,92 +78,6 @@ nav a:hover {
   color: #E89909;
 }
 
-.footer {
-  background: #FFFFFF;
-}
-.footer .start-footer {
-  padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 60px;
-}
-.footer .start-footer .keep-in-touch p {
-  width: 80%;
-  margin: 24px 0;
-}
-.footer .start-footer .keep-in-touch .continue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.footer .start-footer .keep-in-touch .continue .btn-one input {
-  height: 36px;
-  padding: 0 24px;
-}
-.footer .start-footer .keep-in-touch .continue .btn-two button {
-  border: none;
-  height: 40px;
-  margin-left: 4px;
-  background: rgba(234, 12, 12, 0.8);
-  color: #FFFFFF;
-  padding: 0 20px;
-}
-.footer .start-footer .keep-in-touch .icon img {
-  width: 50%;
-  margin: 16px 0;
-}
-.footer .start-footer .can-contact {
-  width: 50%;
-}
-.footer .start-footer .can-contact p {
-  margin: 24px 0;
-}
-.footer .start-footer .find-us-in-here ul li {
-  list-style-type: none;
-  margin: 24px 0;
-}
-.footer .start-footer .find-us-in-here ul li a {
-  color: black;
-}
-.footer .start-footer .find-us-in-here ul li a:hover {
-  border-bottom: 2px solid;
-}
-.footer .end-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.footer .end-footer .canteens {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 100%;
-  text-align: center;
-  padding: 12px 0;
-}
-.footer .end-footer .end {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 32px;
-  margin: 24px 0;
-}
-.footer .end-footer .end .sign-up {
-  border: 3px solid rgba(234, 12, 12, 0.8);
-  border-radius: 10px;
-  padding: 8px 20px;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -301,6 +215,92 @@ body .product-food .product-card:hover {
           transform: scale(1.05);
 }
 
+.footer {
+  background: #FFFFFF;
+}
+.footer .start-footer {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 60px;
+}
+.footer .start-footer .keep-in-touch p {
+  width: 80%;
+  margin: 24px 0;
+}
+.footer .start-footer .keep-in-touch .continue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .start-footer .keep-in-touch .continue .btn-one input {
+  height: 36px;
+  padding: 0 24px;
+}
+.footer .start-footer .keep-in-touch .continue .btn-two button {
+  border: none;
+  height: 40px;
+  margin-left: 4px;
+  background: rgba(234, 12, 12, 0.8);
+  color: #FFFFFF;
+  padding: 0 20px;
+}
+.footer .start-footer .keep-in-touch .icon img {
+  width: 50%;
+  margin: 16px 0;
+}
+.footer .start-footer .can-contact {
+  width: 50%;
+}
+.footer .start-footer .can-contact p {
+  margin: 24px 0;
+}
+.footer .start-footer .find-us-in-here ul li {
+  list-style-type: none;
+  margin: 24px 0;
+}
+.footer .start-footer .find-us-in-here ul li a {
+  color: black;
+}
+.footer .start-footer .find-us-in-here ul li a:hover {
+  border-bottom: 2px solid;
+}
+.footer .end-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer .end-footer .canteens {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+}
+.footer .end-footer .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  margin: 24px 0;
+}
+.footer .end-footer .end .sign-up {
+  border: 3px solid rgba(234, 12, 12, 0.8);
+  border-radius: 10px;
+  padding: 8px 20px;
+}
+
 .menu-of-food {
   padding: 20px;
 }
@@ -403,7 +403,7 @@ body {
   border-radius: 50px;
 }
 
-.menu-of-food ul li .color-fry {
+.menu-of-food ul li .color-snack {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#F0772C), to(#E89909));
   background-image: linear-gradient(to bottom, #F0772C, #E89909);
   color: #FFFFFF;

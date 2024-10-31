@@ -402,3 +402,9 @@ body {
   border: none;
   border-radius: 50px;
 }
+
+.menu-of-food ul li .color-snack {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F0772C), to(#E89909));
+  background-image: linear-gradient(to bottom, #F0772C, #E89909);
+  color: #FFFFFF;
+}
