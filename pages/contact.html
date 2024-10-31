@@ -4,59 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/contact-us.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../css/contact.min.css">
+    
 </head>
 <body>
     <nav>
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="../images/images.jpg" alt="">
+        </div>
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="../pages/about.html">ABOUT</a></li>
             <li><a href="../pages/menu.html">MENU</a></li>
             <li><a href="../pages/contact.html">CONTACT</a></li>
         </ul>
-        <div class="language">
-            <select name="" id="language">
-             <option value="">English</option>
-             <option value="">ភាសាខ្មែរ</option>
-            </select>
-         </div>
-        <div class="login">
-            <div class="icon"></div>
-            <h4>Log in</h4>
+        <div class="nav-right">
+            <div class="change-language">
+                <span class="material-symbols-outlined">
+                    language
+                    </span>
+                <select name="" id="language">
+                 <option value="">English</option>
+                 <option value="">ភាសាខ្មែរ</option>
+                </select>
+            </div>
+                
+            <div class="login">
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+                <h4>Log in</h4>
+            </div>
+            <div class="icon-right">
+                <span class="material-symbols-outlined">
+                    more_vert
+                    </span>
+            </div>
         </div>
-        <div class="icon"></div>
     </nav>
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="image">
-                <img src="../images/contact/photo_2024-10-28_13-27-10.jpg" alt="">
+    <!-- image background -->
+    <div class="container">
+        <img class="image" src="../images/contact/photo_2024-10-28_13-27-10.jpg" alt="">
+        <div class="text-card">
+            <h1>contact</h1>
+            <p>If you want to eat the delicious  food you can contact to us</p>
+            <button>GET START</button>
+        </div>
+    </div>
+    <div class="feedback">
+        <h1></h1>
+        <h2>Feedback</h2>
+        <h1></h1>
+    </div>
+    <!-- card layout-->
+    <div class="card">
+        <div class="big-login">
+            <div class="container-card">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
             </div>
-            <div class="text">
-                <h1>Contact us</h1>
-                <p>If you want to eat delicious food, you can contact us</p>
-                <button class="get-started-btn">Get Started</button>
-            </div>
-        </section>
-        <!-- Feedback Form -->
-        <section class="feedback-section">
-            <h2>Feedback From Audience</h2>
-            <div class="feedback-form">
-                <div class="rating">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>4</button>
-                    <button>5</button>
+            <div class="name-input">
+                <div class="btn-card">
+                    <input class="btn1" type="text" placeholder="first name">
+                    <input class="btn1" type="text" placeholder="last name">
                 </div>
-                <input type="text" placeholder="Full Name" required>
-                <input type="text" placeholder="Student-ID" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Feedback"></textarea>
-                <button class="submit-btn">Submit</button>
+                <div class="btn-card">
+                    <input class="btn1" type="text" placeholder="student-id">
+                    <input class="btn1" type="text" placeholder="class">
+                </div>
+                <div class="btn-card">
+                    <input class="btn1 email" type="email" placeholder="email">
+                </div>
+                <div class="textfeedback">
+                    <textarea class="feedback-student" placeholder="Feedback"></textarea>
+                </div>
+                <div class="btn-card">
+                    <button class="btn1 submit">Submit</button>
+                </div>
             </div>
-        <!--  -->
+        </div>
 
-    </nav>
+        <!-- Picture and imformation card -->
+        <div class="pictures">
+            <div class="pany">
+                <div class="rub">
+                <img src="../images/contact/photo_2024-08-28_07-28-59.jpg" alt="">
+            </div>
+                <div class="card-pich">
+                    <p>Good quality, fast service, friendly <br> seller, there are many kinds of food for <br>me to choose.</p>
+                    <h2>Soklen</h2>
+                    <span class="material-symbols-outlined">
+                        star star star
+                        </span>
+                </div>
+            </div>
+            <div class="pany">
+                <div class="rub">
+                <img src="../images/contact/photo_2024-03-31_14-57-09.jpg" alt="">
+            </div>
+                <div class="card-pich">
+                    <p>Good quality, fast service, friendly <br> seller, there are many kinds of food for <br>me to choose.</p>
+                    <h2>Pany</h2>
+                    <span class="material-symbols-outlined">
+                        star star star
+                        </span>
+                </div>
+            </div>
+            <div class="pany">
+                <div class="rub">
+                <img src="../images/contact/photo_2024-10-30_10-06-23.jpg" alt="">
+            </div>
+                <div class="card-pich">
+                    <p>Good quality, fast service, friendly <br> seller, there are many kinds of food for <br>me to choose.</p>
+                    <h2>Sreyneang</h2>
+                    <span class="material-symbols-outlined">
+                        star star star
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact about us  -->
+     <div class="contact-us">
+        <div class="card-contact-us">
+            <div class="box">
+                <div class="image">
+                    <img src="../images/contact/download (1).png" alt="">
+                </div>
+                <div class="title">HOTLINE</div>
+                <div class="info">
+                    +856 97 123 123<br>
+                    +856 97 456 456
+                </div>
+            </div>
+        </div>
+        <div class="card-contact-us">
+            <div class="box">
+                <div class="image">
+                    <img src="../images/contact/image 84.jpg" alt="">
+                </div>
+                <div class="title">LOCATION</div>
+                <div class="info">
+                    BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371, Phnom Penh
+                </div>
+            </div>
+        </div>
+        <div class="card-contact-us">
+            <div class="box">
+                <div class="image">
+                    <img src="../images/contact/download.png" alt="">
+                </div>
+                <div class="title">TELEGRAM</div>
+                <div class="info">
+                    +856 97 456 456 <br>
+                    +856 97 456 456
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.3894086328564!2d104.88050867354292!3d11.550865044435024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951add5e2cd81%3A0x171e0b69c7c6f7ba!2sPasserelles%20num%C3%A9riques%20Cambodia%20(PNC)!5e1!3m2!1sen!2skh!4v1730356867422!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
 </body>
 </html>

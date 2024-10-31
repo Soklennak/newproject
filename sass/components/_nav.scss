@@ -1,9 +1,61 @@
 @import 'variable';
 @import '../mixins/group-mixins';
-nav {
+
+nav{
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 10px;
     background: $nav-color;
+    justify-content: space-between;
+    .nav-right{
+        display: flex;
+        gap: 12px;
+        .change-language{
+            @include nav-bar;
+            height:32px;
+            border-radius: 12px;
+            width: 108px;
+            span {
+                margin-top: 4px;
+            }
+
+            #language{
+                border: none;
+            }
+        }
+        .login {
+            @include nav-bar;
+            height:32px;
+            margin-bottom: 4px;
+            border-radius: 50px;
+            width: 94px;
+            gap: 4px;
+            align-self: center;
+            span , h4{
+                padding-left: 4px;
+                padding-top: 4px;
+            }
+        }
+        .icon-right{
+            margin-top: 4px;
+        }
+    }
+    ul{
+        display: flex;
+        gap: 36px;
+        li{
+            list-style: none;
+            a{
+                color: black;
+            }
+        }
+    }
+    .logo img{
+        width: 50px;
+    
+    }
+    a:hover {
+        color: $soup-color;
+    }
 }
+
