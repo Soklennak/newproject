@@ -1,2 +1,80 @@
 @import './variable';
 @import '../mixins/group-mixins';
+
+.footer {
+    background: $nav-color;
+    .start-footer{
+        padding: 30px;
+        display: flex;
+        padding-left: 60px;
+        .keep-in-touch {
+           
+            p{
+                width: 80%;
+                margin: 24px 0;
+            }
+            .continue{
+                display: flex;
+               .btn-one input{
+                height: 36px;
+                padding: 0 24px;
+               }
+               .btn-two button{
+                    border: none;
+                    height: 40px;
+                    margin-left: 4px;
+                    background:$signup-color;
+                    color:$nav-color;
+                    padding: 0 20px;
+               }
+            }
+            .icon img{
+                width: 50%;
+                margin: 16px 0;
+            }
+        }
+        .can-contact {
+            width: 50%;
+            p{
+                margin: 24px 0;
+            }
+        }
+        .find-us-in-here{
+            ul{
+                li{
+                    list-style-type: none;
+                    margin: 24px 0;
+                    a{
+                        color: black;
+                        
+                    }
+                    a:hover{
+                        border-bottom:  2px solid;
+                    }
+                }
+            }
+        }
+    }
+
+    .end-footer{
+        @include center;
+        flex-direction: column;
+        .canteens{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;            width: 100%;
+            text-align: center;
+            padding: 12px 0;
+        }
+        .end {
+            display: flex;
+            gap: 32px;
+            margin: 24px 0;
+            .sign-up {
+                border: 3px solid $signup-color;
+                border-radius: 10px;
+                padding:8px 20px;
+            }
+          
+        }
+    }
+
+}

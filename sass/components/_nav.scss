@@ -36,6 +36,9 @@ nav{
                 padding-top: 4px;
             }
         }
+        .login:hover{
+            background-color: rgba(0, 0, 0, 0.049);
+        }
         .icon-right{
             margin-top: 4px;
         }
@@ -47,6 +50,10 @@ nav{
             list-style: none;
             a{
                 color: black;
+            }
+
+            .color-page {
+                color: orange;
             }
         }
     }

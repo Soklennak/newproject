@@ -4,7 +4,7 @@
 @import '../mixins/reponsive';
 @import '../components/footer';
 @import '../components/card';
-
+@import '../components/titleoffood';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -23,4 +23,58 @@ body {
     @include imgcenter ;
     background-size: cover;
     background-repeat: no-repeat;
+    h1{
+        font-size: $font-size-h1;
+    }
+    p{
+        font-size: $font-size-p;
+    }
+
+    .search-food {
+        display: flex;
+        background: $nav-color;
+        width: 50%;
+        height: 6vh;
+        border-radius: 50px;
+        justify-content: space-between;
+        margin-top: 48px;
+       
+
+        input {
+            border: none;
+            outline: none;
+            }
+        button {
+            @include button;
+            
+            
+        }
+        .icon{
+            margin-top: 8px;
+            margin-left: 10px;
+        }
+
+    }
+}
+
+.btn-seemore {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    margin-left: 50%;
+    @include button;
+    
+
+}
+
+.menu-of-food {
+    ul {
+      li {
+        .color-soup{
+            background-image: linear-gradient(to bottom, $fry-color, $soup-color);
+            color: $nav-color;
+            }
+            
+        }
+    }
 }
