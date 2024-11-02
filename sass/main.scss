@@ -1,11 +1,10 @@
 @import './components/variable';
-@import './components/nav';
+@import '../sass/components/nav';
 @import './components/card';
 @import './components/footer';
 @import './mixins/group-mixins';
 @import './mixins/reponsive';
 
-@import './components/nav';
 * {
     padding: 0;
     margin: 0;
@@ -19,17 +18,12 @@ body {
 body{
     background: $bodycolor;
     width: 100%;
-    height: 1000vh;
     box-sizing: border-box;margin: auto;
     padding: auto;
     
 }
-na{
-    height: 100px;
-}
 header{
     display: flex;
-    
     height: 70vh;
     background-image: url( https://img.freepik.com/free-photo/top-view-spaghetti-with-olive-tomato-basil-leaf-herbs-white-backdrop_23-2148195083.jpg?t=st=1730255310~exp=1730258910~hmac=a8bf98a6387f6b286afc43b3c572d8c56e89a7cdb2d1fc9f0f6c3b4ea69e9fef&w=1060);
     padding: 10%;
@@ -54,34 +48,40 @@ header{
             }
         }
         width: 60%;
-        margin-left:50%;
+        margin-left:46%;
         @include center;
         flex-direction: column;
         .searchfood{
+            text-align: center;
+            width: 59%;
         input{
             height: 40px;
-            width: 70%;
+            width: 80%;
             text-align: center;
+            margin-top: 10px;
             border: none;
             outline: none;
             transform: translateY(-8px);
         }
        @include space-between;
-
        border-radius: 75px;
        height: 50px;
        width: 50%;
        border: solid 1px;
        background-color: whitesmoke;
        .bt{
-        width: 100px;
+        width: 200px;
         height: 50px;
         border: none;
         border-radius: 25px;
         background: $soup-color;
+        font-size: 20px;
+         font-weight: bold;
+        
        }
        .material-symbols-outlined{
-        margin-left: 30px;     
+        margin-left: 30px; 
+        font-size: 30px;    
        }    
        
         }
@@ -94,12 +94,11 @@ header{
     height: 64vh;
     position: absolute;
     left: 0px;
-    top: 100vh;        
+    top: 105vh;        
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     .icon{
-        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -128,6 +127,19 @@ header{
             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
            @include icontext;     
         }
+    }
+}
+.title {
+    @include center;
+    margin: 16px 0;
+    margin-top: 50px;
+    .ruler {
+        border-bottom: 3px solid;
+        width: 16%;
+        padding: 10px;
+    }
+    h3{
+        font-size: $font-size-h3;
     }
 }
 main{
@@ -277,6 +289,9 @@ main{
             transition: $transition;
             border-radius: 40px;
             font-weight: bold;
+            a{
+                color: white;
+            }
             &:hover{
                 @include hover;
                 color: white;
@@ -435,3 +450,9 @@ main{
         }
         }
     }
+// @media only screen and (min-width: 768px){
+   
+// }
+// @media only screen and (min-width: 320px) {
+
+// }
