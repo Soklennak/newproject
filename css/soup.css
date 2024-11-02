@@ -79,6 +79,9 @@ nav a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .section .information-schedule .information-time h5 {
+    width: 12%;
+  }
   .footer .start-footer {
     display: -webkit-box;
     display: -ms-flexbox;
