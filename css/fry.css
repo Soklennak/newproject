@@ -86,7 +86,7 @@ nav a:hover {
   border: none;
   height: 40px;
   margin-left: 4px;
-  background: rgba(226, 20, 20, 0.937);
+  background: rgba(234, 12, 12, 0.8);
   color: #FFFFFF;
   padding: 0 20px;
 }
@@ -128,7 +128,7 @@ nav a:hover {
   margin: 24px 0;
 }
 .footer .end-footer .end .sign-up {
-  border: 3px solid rgba(226, 20, 20, 0.937);
+  border: 3px solid rgba(234, 12, 12, 0.8);
   border-radius: 10px;
   padding: 8px 20px;
 }
@@ -185,7 +185,12 @@ body .product-food .product-card .product-img::before {
   position: absolute;
   top: 0;
   left: 0;
+<<<<<<< HEAD
+  background-image: linear-gradient(to bottom, #F0772C, #E89909);
+=======
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909));
   background-image: linear-gradient(to bottom, #E89909);
+>>>>>>> e43af2e684dde2e4884ad7d0238e8d53cd2d694d
   border-radius: 15px 15px 40px 0;
   z-index: -1;
 }
@@ -196,7 +201,12 @@ body .product-food .product-card .product-text {
   z-index: 2;
 }
 body .product-food .product-card .product-text h2 {
+<<<<<<< HEAD
+  background-image: linear-gradient(to bottom, #F0772C, #E89909);
+=======
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909));
   background-image: linear-gradient(to bottom, #E89909);
+>>>>>>> e43af2e684dde2e4884ad7d0238e8d53cd2d694d
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -218,7 +228,12 @@ body .product-food .product-card .product-text::before {
   z-index: -1;
 }
 body .product-food .product-card button {
+<<<<<<< HEAD
+  background-image: linear-gradient(to bottom, #F0772C, #E89909);
+=======
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909));
   background-image: linear-gradient(to bottom, #E89909);
+>>>>>>> e43af2e684dde2e4884ad7d0238e8d53cd2d694d
   outline: none;
   border: none;
   border-radius: 10px;
@@ -325,9 +340,14 @@ body {
   padding: 8px 18px;
   border: none;
   border-radius: 50px;
+<<<<<<< HEAD
+}/*# sourceMappingURL=fry.css.map */
+=======
 }
 
 .menu-of-food ul li .color-fry {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F0772C), to(#E89909));
   background-image: linear-gradient(to bottom, #F0772C, #E89909);
   color: #FFFFFF;
 }
+>>>>>>> e43af2e684dde2e4884ad7d0238e8d53cd2d694d
