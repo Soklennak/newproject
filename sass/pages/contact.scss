@@ -3,5 +3,245 @@
 @import '../mixins/group-mixins';
 @import '../mixins/reponsive';
 @import '../components/footer';
-
+// for font 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: $main-color;
+    .image{
+        width: 100%;
+        height: 500px;
+    }
+}
+.text-card{
+    position: relative;
+    bottom: 69vh;
+    width: 50%;
+    h1{
+        position: relative;
+        left: 20%;
+        font-size: $font-size-h1;
+    }
+    p{
+        font-size: $font-size-h4;
+        position: relative;
+        bottom: 10px;
+        left: 20%;
+        font-family: "Noto Sans", sans-serif;
+    }
+    button{
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        width: 60%;
+        padding: 10px;
+        position: relative;
+        top: 100px;
+        height: 50px;
+        border-radius: 180px;
+        position: relative;
+        left: 20%;
+        background: $soup-color;
+        border: none;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    }
+    button:hover{
+        transform: scale(1.05);
+    }
+    
+}
+.feedback {
+    position: relative;
+    bottom: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: #d3a15d;
+    padding: 20px;
+    gap: 10px;
+    h2{
+        position: relative;
+        font-size: 24px;
+        font-weight: normal;
+        text-align: center;
+        color: black;
+    }
+    h1{
+        border-bottom: 2px solid black;
+        width: 30%;
+
+    }
+}
+.card{
+    display: flex;
+    position: relative;
+    bottom: 140px;
+        .big-login{
+            width: 30%;
+            position: sticky;
+            padding: 10px;
+            height: 430px;
+            background: rgba(255, 255, 255, 0.801);
+            border-radius: 20px;
+            position: relative;
+            left: 80px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            button{
+                position: relative;
+                left: 91px;
+                width: 10%;
+                height: 40px;
+                bottom: 10px;
+                top: 2px;
+                border: none;
+
+                 
+                border-radius: 2rem;
+            }
+            button:hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            .name-input{
+                position: relative;
+                top: 10px;
+                height: 350px;
+                gap: 21px;
+                .btn-card{
+                    display: flex;
+                    .btn1{
+                        text-align: center;
+                        width: 80%;
+                        height: 40px;
+                        background: white;
+                        border-radius: 10px;
+                        border: none;
+                        position: relative;
+                        top: 20px;
+                        margin-bottom:12px ;
+                        margin-right: 12px;
+                        position: sticky;
+                        outline: none;
+
+                    }
+                    .email{
+                        width: 100%;    
+                        
+                    }
+                }
+                .textfeedback{
+                    margin-top: 16px;
+
+                    .feedback-student{
+                        position: relative;
+                        border-radius: 10px;
+                        height: 100px;
+                        width: 97%;
+                        position: sticky;
+                        
+                    }
+
+                }
+                .btn-card{
+                    .submit{
+                        margin-top: 12px;
+                        width: 100%;
+                        background: $soup-color;
+                        height: $font-size-h1;
+                        border-radius: $font-size-h5;
+                        
+                    }
+                }
+
+            }
+        }
+    .pictures{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        gap: 20.9px;
+        img{
+            width: 40vh;
+            height: 130px;   
+            border-radius: 10px;   
+            object-fit: cover;   
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;      
+        }
+    }
+}
+.pany{
+    display: flex;
+    
+}
+.card-pich{
+    position: relative;
+    left: 20px;
+}
+// card box
+.contact-us{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    .card-contact-us{
+        transition: background-color 0.3s ease, transform 0.3s ease;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        position: relative;
+        bottom: 90px;
+        background-color: #fff;
+        border-radius: 8px;
+        width: 200px;
+        text-align: center;
+        padding: 100px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        .box{
+            .title{
+                font-size: 1.8rem;
+                position: relative;
+                top: 60px;
+
+            }
+            .info{
+                position: relative;
+                top: 60px;
+                
+            }
+        }
+        .image{
+            background: gold;
+            height: 0px;
+            img{
+                width: 60%;
+                height: 110px;
+                background-size: cover;
+                position: relative;
+                bottom: 70px;
+
+                
+            }
+        }
+
+    }
+    // for hover card contact abou number phone,telegram, and locatio
+    .card-contact-us:hover{
+        transform: scale(1.05);
+
+    }
+}
+.maps{
+    iframe{
+        position: relative;
+        bottom: 20px;
+        width: 100%;
+        height:70vh;
+    }
+}
+// @media (max-width:800px){
+//      .contact-us{
+
+//      }
+// }
