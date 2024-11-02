@@ -24,7 +24,7 @@ body{
 }
 header{
     display: flex;
-    height: 70vh;
+    height: 80vh;
     background-image: url( https://img.freepik.com/free-photo/top-view-spaghetti-with-olive-tomato-basil-leaf-herbs-white-backdrop_23-2148195083.jpg?t=st=1730255310~exp=1730258910~hmac=a8bf98a6387f6b286afc43b3c572d8c56e89a7cdb2d1fc9f0f6c3b4ea69e9fef&w=1060);
     padding: 10%;
     background-size: cover;
@@ -143,7 +143,7 @@ header{
     }
 }
 main{
-    margin-top: 250px;
+    margin-top: 200px;
     width: 100%;
     .fullcard{
         flex-wrap: wrap;
@@ -175,7 +175,7 @@ main{
             }
             display: flex;
             position: absolute;
-            top: 210vh;
+            top: 216vh;
             background: $nav-color;
             width: 27%;
             height: 180px;
@@ -220,7 +220,7 @@ main{
             gap: 20px;
             display: flex;
             position: absolute;
-            top: 280vh;
+            top: 296vh;
             background: $nav-color;
             width: 27%;
             height: 180px;
@@ -257,7 +257,7 @@ main{
 }
 
 .exploremenu{
-    margin-top: 100px;
+    margin-top: 60px;
     width: 80%;
     height: 70vh;
     display: flex;
