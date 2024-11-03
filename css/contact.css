@@ -461,9 +461,6 @@ body .image {
   .maps iframe {
     height: 80vh;
   }
-  .footer {
-    background-color: blueviolet;
-  }
   .footer .start-footer {
     display: flex;
     flex-direction: column;
