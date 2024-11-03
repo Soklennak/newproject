@@ -10,449 +10,574 @@
     margin: 0;
     text-decoration: none;
 }
-
 body {
     font-family: 'Poppins', sans-serif; 
 }
-
 body{
     background: $bodycolor;
     width: 100%;
     box-sizing: border-box;margin: auto;
     padding: auto;
-    
-}
-header{
-    display: flex;
-    height: 80vh;
-    background-image: url( https://img.freepik.com/free-photo/top-view-spaghetti-with-olive-tomato-basil-leaf-herbs-white-backdrop_23-2148195083.jpg?t=st=1730255310~exp=1730258910~hmac=a8bf98a6387f6b286afc43b3c572d8c56e89a7cdb2d1fc9f0f6c3b4ea69e9fef&w=1060);
-    padding: 10%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
- 
-    .head{
-        .head-text{
-            font-size:40px;
-            text-align: center;
-            margin-bottom: 10%;
-            p{
-                font-size: $font-size-h3;
-            }
-            h1{
-                margin-bottom: 30px;
-                color: $soup-color;
-                font-weight: bold;
-            }
-        }
-        width: 60%;
-        margin-left:46%;
-        @include center;
-        flex-direction: column;
-        .searchfood{
-            text-align: center;
-            width: 59%;
-        input{
-            height: 40px;
-            width: 80%;
-            text-align: center;
-            margin-top: 10px;
-            border: none;
-            outline: none;
-            transform: translateY(-8px);
-        }
-       @include space-between;
-       border-radius: 75px;
-       height: 50px;
-       width: 50%;
-       border: solid 1px;
-       background-color: whitesmoke;
-       .bt{
-        width: 200px;
-        height: 50px;
-        border: none;
-        border-radius: 25px;
-        background: $soup-color;
-        font-size: 20px;
-         font-weight: bold;
-        
-       }
-       .material-symbols-outlined{
-        margin-left: 30px; 
-        font-size: 30px;    
-       }    
-       
-        }
-    
-    }
-}
-.icon-3{
-    transition: $transition;
-    width: 100%;
-    height: 64vh;
-    position: absolute;
-    left: 0px;
-    top: 105vh;        
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    .icon{
+    header{
+        display: flex;
+        height: 80vh;
+        background-image: url( https://img.freepik.com/free-photo/top-view-spaghetti-with-olive-tomato-basil-leaf-herbs-white-backdrop_23-2148195083.jpg?t=st=1730255310~exp=1730258910~hmac=a8bf98a6387f6b286afc43b3c572d8c56e89a7cdb2d1fc9f0f6c3b4ea69e9fef&w=1060);
+        padding: 10%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height:300px;
-        width: 500px;
-        .icon1{
-            &:hover{
-                @include hover;
-                    color: white;
-                    
-            }
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-            @include iconone;
-            img{
-                @include imgdriks;   
-            }
-            
-        }
-        .text-icon{
-            &:hover{
-                @include hover;
-                    color: white;
-                    
-            }
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-           @include icontext;     
-        }
-    }
-}
-.title {
-    @include center;
-    margin: 16px 0;
-    margin-top: 50px;
-    .ruler {
-        border-bottom: 3px solid;
-        width: 16%;
-        padding: 10px;
-    }
-    h3{
-        font-size: $font-size-h3;
-    }
-}
-main{
-    margin-top: 200px;
-    width: 100%;
-    .fullcard{
-        flex-wrap: wrap;
-        margin: auto;
-        @include space-between;
-        width: 90%;
-        height: 500px;
-        }
-        .card{
-        transition: $transition;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        background: $cardhomepage;
-        height: 400px;
-        border-radius: 30px;
-        gap:20px
-        img{
-            width: 250px;
-            height: 250px;
-            display: flex;
-            align-self: center;
-            margin-top: 10px; 
-        }  
-           .incard{
-            &:hover{
-                @include hover;              
-            }
-            display: flex;
-            position: absolute;
-            top: 216vh;
-            background: $nav-color;
-            width: 27%;
-            height: 180px;
-            justify-content: space-between;
-            border-radius: 30px;
-            
-           
-            .cardtext{
-                width:70% ; 
-                margin: auto;
-                margin-left: 20px
-                
-            }
-            .btom{
-
-                @include center;
-                width:100px;
-                margin-right: 10px;
-                height: 30%;
-                background: $fry-color;
-                margin-top: 100px;
-                border-radius: 25px;
-                font-size: 20px;
-                    font-weight: bold;
-                    color: white;
-                &:hover{
-                    @include hover;
-                    background: $soup-color;
-                    font-size: 20px;
-                    font-weight: bold;
-                        
+        .head{
+            .head-text{
+                font-size:40px;
+                text-align: center;
+                margin-bottom: 10%;
+                p{
+                    font-size: $font-size-h3;
                 }
-                
-            }
-           }
-        }
-        .twocard{
-            &:hover{
-                @include hover;
-                    
-            }
-            gap: 20px;
-            display: flex;
-            position: absolute;
-            top: 296vh;
-            background: $nav-color;
-            width: 27%;
-            height: 180px;
-            justify-content: space-between;
-            border-radius: 30px;
-            
-            .cardtext{
-                width:70% ; 
-                margin: auto;
-                margin-left: 20px
-                
-            }
-            .btom{
-                font-size: 20px;
-                font-weight: bold;
-                @include center;
-                width:100px;
-                color: white;
-                margin-right: 10px;
-                height: 30%;
-                background: $fry-color;
-                margin-top: 100px;
-                border-radius: 25px;
-                &:hover{
-                    @include hover;
-                    background: $soup-color;
-                    font-size: 20px;
+                h1{
+                    margin-bottom: 30px;
+                    color: $soup-color;
                     font-weight: bold;
-                        
                 }
             }
-}
-    
-}
-
-.exploremenu{
-    margin-top: 60px;
-    width: 80%;
-    height: 70vh;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    @include imgcenter;
-    background-image: url(https://img.freepik.com/free-photo/high-angle-view-bruschetta-with-farfalle-raw-pasta-garlic-clove-tomato-oil-basil-leaf-against-isolated-white-background_23-2148195082.jpg?t=st=1730248723~exp=1730252323~hmac=5bb3a2796dec0e6b5cc7b6d09a34405676ab45f639a12da0588537d9cdb14819&w=826);
-    .explore{
-        h1{
-            font-size: 50px;
-            color: white;
-        }
-        @include center;
-        @include colum;
-        text-align: center;
-        width: 60%;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        height: 100%;
-        background: $fry-color;
-        border-radius: 0px 200px 0px 200px;
-        transition: transform 0.3s, box-shadow 0.3s;
-        .btexplore{
-            font-size: 32px;
-            margin-top: 12%;
-            background: $cardhomepage;
-            color: $soup-color;
-            padding: 24px 100px;
-            border: none;
-            transition: $transition;
-            border-radius: 40px;
-            font-weight: bold;
-            a{
-                color: white;
-            }
-            &:hover{
-                @include hover;
-                color: white;
-                background-color: $soup-color;
-            }
-
-
-        }
-        &:hover{
-            
+            width: 60%;
+            margin-left:46%;
+            @include center;
+            flex-direction: column;
+            .searchfood{
+                text-align: center;
+                width: 59%;
+            input{
+                height: 40px;
+                width: 80%;
+                text-align: center;
+                margin-top: 10px;
+                border: none;
+                outline: none;
                 transform: translateY(-8px);
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
-            
-        }
-    }
-
-}
-.booking{
-   
-   background-image: url(https://img.freepik.com/premium-photo/food-cooking-preparation-background-kitchen-table-background-with-spices-herbs-vegetables-parsley-onion-garlic-tomatoes-salt-olive-oil-white-background-top-view-flatlay-copy-space_136595-20795.jpg?w=900);
-   @include imgcenter;
-   width: 80%;
-   height:70vh;
-   .booktable{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    width: 80%;
-    height: 70vh;
-    border-radius: 50px 50px 50px 50px;
-    background: $soup-color;
-    @include space-between;
-    img{
-        width: 450px;
-        height: 100%;
-        border-radius: 50px 0px 0px 50px;
-    }
-    .book{
-        transform: $transition;
-        @include center;
-        @include colum;
-        text-align: center;
-        width: 60%;
-        height: 100%;
-        color: black;
-        background: $cardhomepage;
-        border-radius: 0px 50px 50px 0px;
-        
-        h1{
-            font-size: 50px;
-            color: black;
-        }
-        p{
-            margin-top: 10%;
-            font-size: 26px;
-        }
-        .btcheckin{
-            font-size: 32px;
-            margin-top: 10%;
-            background: $soup-color;
-            color: white;
-            padding: 24px 100px;
-            border: none;
-            transition: $transition;
-            border-radius: 40px;
-            font-weight: bold;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-            
-            &:hover{
-                @include hover;
-                 background: $fry-color;
-               
-                 
             }
+           @include space-between;
+           border-radius: 75px;
+           height: 50px;
+           width: 50%;
+           border: solid 1px;
+           background-color: whitesmoke;
+           .bt{
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            background: $soup-color;
+            font-size: 20px;
+             font-weight: bold;
+            
+           }
+           .material-symbols-outlined{
+            margin-left: 30px; 
+            font-size: 30px;    
+           }    
+           
+            }
+        
         }
     }
-    }
-}
-.imgcercle{
-    @include imgcenter;
-    height: 100vh;
-    display: flex;
-    width: 80%;
-    height: 100vh;
-    flex-direction: row;
-    background-image: url(../images/Homeimg/ice-cream-background-with-fruits-copyspace_23-2147811071.jpg);
-    .allcercle{
-        justify-content: space-between;
-        margin-left: 20px;
-        gap: 20px;
-        width: 80%;
+    .icon-3{
+        transition: $transition;
+        width: 100%;
+        position: absolute;
+        top: 118vh;    
         display: flex;
-        flex-wrap: wrap;
-        
-        align-items: flex-start;
-         .cercle{
-        margin-left: 10px;
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height:250px;
-        width: 250px;
-        img{
-       border-radius: 50%;
-       width: 250px;
-       height: 300px;
+        .icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height:300px;
+            width: 500px;
+            .icon1{
+                &:hover{
+                    @include hover;
+                        color: white;
+                        
+                }
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+                @include iconone;
+                img{
+                    @include imgdriks;   
+                }
+                
+            }
+            .text-icon{
+                &:hover{
+                    @include hover;
+                        color: white;
+                        
+                }
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+               @include icontext;     
+            }
+        }
     }
-    }
-    }
-     }
-.seecard{
-    .divseecard{
+    .title {
         @include center;
-        width: 80%;
-        height: 80vh;
-        margin-left: 30px;
+        margin: 16px 0;
+        margin-top: 50px;
+        .ruler {
+            border-bottom: 3px solid;
+            width: 16%;
+            padding: 10px;
+        }
+        h3{
+            font-size: $font-size-h3;
+        }
     }
-    width: 100%;
-    height: 100vh;
-    @include space-between;
-     img{
-            width: 50%;
-            height: 100vh;
-            margin-left: 30px;
-        }
-    .containerseecard{
-        
-       
-        h1{
-            font-size: 50px;
-            color: black;
-        }
-        p{
-            margin-top: 10%;
-            font-size: 26px;
-        }
-        @include colum;
-        @include center;
-        text-align: center;
-        .btseecard{
-            font-size: 32px;
-            margin-top: 10%;
-            background: $soup-color;
-            color: white;
-            padding: 24px 100px;
-            border: none;
+    main{
+        margin-top: 200px;
+        width: 100%;
+        .fullcard{
+            flex-wrap: wrap;
+            margin: auto;
+            @include space-between;
+            width: 90%;
+            height: 500px;
+            }
+            .card{
             transition: $transition;
-            border-radius: 40px;
-            font-weight: bold;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-            
-            &:hover{
-                @include hover;
-                 background: $fry-color;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            background: $cardhomepage;
+            height: 400px;
+            border-radius: 30px;
+            gap:20px
+            img{
+                width: 250px;
+                height: 250px;
+                display: flex;
+                align-self: center;
+                margin-top: 10px; 
+            }  
+               .incard{
+                &:hover{
+                    @include hover;              
+                }
+                display: flex;
+                position: absolute;
+                top: 216vh;
+                background: $nav-color;
+                width: 27%;
+                height: 180px;
+                justify-content: space-between;
+                border-radius: 30px;
+                
                
+                .cardtext{
+                    width:70% ; 
+                    margin: auto;
+                    margin-left: 20px
+                    
+                }
+                .btom{
+    
+                    @include center;
+                    width:100px;
+                    margin-right: 10px;
+                    height: 30%;
+                    background: $fry-color;
+                    margin-top: 100px;
+                    border-radius: 25px;
+                    font-size: 20px;
+                        font-weight: bold;
+                        color: white;
+                    &:hover{
+                        @include hover;
+                        background: $soup-color;
+                        font-size: 20px;
+                        font-weight: bold;
+                            
+                    }
+                    
+                }
+               }
+            }
+            .twocard{
+                &:hover{
+                    @include hover;
+                        
+                }
+                gap: 20px;
+                display: flex;
+                position: absolute;
+                top: 296vh;
+                background: $nav-color;
+                width: 27%;
+                height: 180px;
+                justify-content: space-between;
+                border-radius: 30px;
+                
+                .cardtext{
+                    width:70% ; 
+                    margin: auto;
+                    margin-left: 20px
+                    
+                }
+                .btom{
+                    font-size: 20px;
+                    font-weight: bold;
+                    @include center;
+                    width:100px;
+                    color: white;
+                    margin-right: 10px;
+                    height: 30%;
+                    background: $fry-color;
+                    margin-top: 100px;
+                    border-radius: 25px;
+                    &:hover{
+                        @include hover;
+                        background: $soup-color;
+                        font-size: 20px;
+                        font-weight: bold;
+                            
+                    }
+                }
+    }
+        
+    }
+    
+    .exploremenu{
+        margin-top: 60px;
+        width: 80%;
+        height: 70vh;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        @include imgcenter;
+        background-image: url(https://img.freepik.com/free-photo/high-angle-view-bruschetta-with-farfalle-raw-pasta-garlic-clove-tomato-oil-basil-leaf-against-isolated-white-background_23-2148195082.jpg?t=st=1730248723~exp=1730252323~hmac=5bb3a2796dec0e6b5cc7b6d09a34405676ab45f639a12da0588537d9cdb14819&w=826);
+        .explore{
+            h1{
+                font-size: 50px;
+                color: white;
+            }
+            @include center;
+            @include colum;
+            text-align: center;
+            width: 60%;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            height: 100%;
+            background: $fry-color;
+            border-radius: 0px 200px 0px 200px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            .btexplore{
+                font-size: 32px;
+                margin-top: 12%;
+                background: $cardhomepage;
+                color: $soup-color;
+                padding: 24px 100px;
+                border: none;
+                transition: $transition;
+                border-radius: 40px;
+                font-weight: bold;
+                a{
+                    color: white;
+                }
+                &:hover{
+                    @include hover;
+                    color: white;
+                    background-color: $soup-color;
+                }
+    
+    
+            }
+            &:hover{
+                
+                    transform: translateY(-8px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
+                
+            }
+        }
+    
+    }
+    .booking{
+       
+       background-image: url(https://img.freepik.com/premium-photo/food-cooking-preparation-background-kitchen-table-background-with-spices-herbs-vegetables-parsley-onion-garlic-tomatoes-salt-olive-oil-white-background-top-view-flatlay-copy-space_136595-20795.jpg?w=900);
+       @include imgcenter;
+       width: 80%;
+       height:70vh;
+       .booktable{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        width: 80%;
+        height: 70vh;
+        border-radius: 50px 50px 50px 50px;
+        background: $soup-color;
+        @include space-between;
+        img{
+            width: 450px;
+            height: 100%;
+            border-radius: 50px 0px 0px 50px;
+        }
+        .book{
+            transform: $transition;
+            @include center;
+            @include colum;
+            text-align: center;
+            width: 60%;
+            height: 100%;
+            color: black;
+            background: $cardhomepage;
+            border-radius: 0px 50px 50px 0px;
+            
+            h1{
+                font-size: 50px;
+                color: black;
+            }
+            p{
+                margin-top: 10%;
+                font-size: 26px;
+            }
+            .btcheckin{
+                font-size: 32px;
+                margin-top: 10%;
+                background: $soup-color;
+                color: white;
+                padding: 24px 100px;
+                border: none;
+                transition: $transition;
+                border-radius: 40px;
+                font-weight: bold;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                
+                &:hover{
+                    @include hover;
+                     background: $fry-color;
+                   
+                     
+                }
             }
         }
         }
     }
-// @media only screen and (min-width: 768px){
-   
-// }
-// @media only screen and (min-width: 320px) {
+    .imgcercle{
+        @include imgcenter;
+        height: 100vh;
+        display: flex;
+        width: 80%;
+        height: 100vh;
+        flex-direction: row;
+        background-image: url(../images/Homeimg/ice-cream-background-with-fruits-copyspace_23-2147811071.jpg);
+        .allcercle{
+            justify-content: space-between;
+            margin-left: 20px;
+            gap: 20px;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            
+            align-items: flex-start;
+             .cercle{
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height:250px;
+            width: 250px;
+            img{
+           border-radius: 50%;
+           width: 250px;
+           height: 300px;
+        }
+        }
+        }
+         }
+    .seecard{
+        .divseecard{
+            @include center;
+            width: 80%;
+            height: 80vh;
+            margin-left: 30px;
+        }
+        width: 100%;
+        height: 100vh;
+        @include space-between;
+         img{
+                width: 50%;
+                height: 100vh;
+                margin-left: 30px;
+            }
+        .containerseecard{
+            
+           
+            h1{
+                font-size: 50px;
+                color: black;
+            }
+            p{
+                margin-top: 10%;
+                font-size: 26px;
+            }
+            @include colum;
+            @include center;
+            text-align: center;
+            .btseecard{
+                font-size: 32px;
+                margin-top: 10%;
+                background: $soup-color;
+                color: white;
+                padding: 24px 100px;
+                border: none;
+                transition: $transition;
+                border-radius: 40px;
+                font-weight: bold;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                
+                &:hover{
+                    @include hover;
+                     background: $fry-color;
+                   
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        h1{
+            font-size: $font-size-h1;
 
-// }
+        }
+        p{
+            font-size: $font-size-h5;
+        }
+        header{
+            width: 80%;
+            height: 450px;
+            .head{
+                margin-top: 30px;
+            }
+        }
+        .icon-3{
+            top: 580px;
+            .icon{
+               .icon1{
+                   width: 200px;
+                   height: 200px;
+               }
+               .text-icon{
+                width: 200px;
+                height: 100px;
+               }
+
+            }
+        }
+        .fullcard{
+             .card{
+                .incard{
+                    top: 1140px;
+                    .cardtext{
+                        p{
+                        display: none;
+                    }
+                    }
+                    
+                }
+             }
+        
+        }
+        .fullcard{
+             .card{
+                img{
+                    margin-top: 30px;
+                }
+                .twocard{
+                    top: 1640px;
+                    .cardtext{
+                        p{
+                        display: none;
+                    }
+                    }
+                    
+                }
+             }
+        
+        }
+        .exploremenu{
+            height: 500px;
+            width: 80%;
+            .explore{
+                .btexplore{
+                    text-align: center;
+                    width: 40vw;
+                    height: 10vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        font-size: 16px;
+                    }
+                }
+                margin-left: 200px;
+                width: 600px;
+                height: 400px;
+                h1{
+                    font-size: 30px;
+                }
+
+            }
+        }
+        .booking{
+            width: 80%;
+            height: 400px;
+            .booktable{
+                width: 400px;
+                height: 400px;
+            }
+            .book{
+                .btcheckin{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width:10px;
+                    height: 60px;
+                    text-align: center;
+                    // font-size: 1px;
+                }
+                
+                width: 250px;
+                height: 400px;
+                h1{
+                    font-size: $font-size-h1
+                }
+                p{
+                    display: none;
+                }
+            }
+        }
+        .imgcercle{
+            width: 80%;
+            height: fit-content;
+            .allcercle{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .cercle{
+                    width: 45%;
+                }
+            }
+        }
+        .seecard{
+            
+            height: fit-content;
+            img{
+                height: 58vh;
+            }
+        }
+    }
+
+    }

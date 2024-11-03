@@ -137,4 +137,218 @@ nav a:hover {
   border: 3px solid rgba(226, 20, 20, 0.937);
   border-radius: 10px;
   padding: 8px 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #F9C86F;
+}
+body .image {
+  width: 100%;
+  height: 500px;
+}
+
+.text-card {
+  position: relative;
+  bottom: 69vh;
+  width: 50%;
+}
+.text-card h1 {
+  position: relative;
+  left: 20%;
+  font-size: 56px;
+}
+.text-card p {
+  font-size: 20px;
+  position: relative;
+  bottom: 10px;
+  left: 20%;
+  font-family: "Noto Sans", sans-serif;
+}
+.text-card button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 60%;
+  padding: 10px;
+  position: relative;
+  top: 100px;
+  height: 50px;
+  border-radius: 180px;
+  position: relative;
+  left: 20%;
+  background: #E89909;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.text-card button:hover {
+  transform: scale(1.05);
+}
+
+.feedback {
+  position: relative;
+  bottom: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+.feedback h2 {
+  position: relative;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+}
+.feedback h1 {
+  border-bottom: 2px solid black;
+  width: 30%;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  bottom: 140px;
+}
+.card .big-login {
+  width: 30%;
+  position: sticky;
+  padding: 10px;
+  height: 430px;
+  background: rgba(255, 255, 255, 0.801);
+  border-radius: 20px;
+  position: relative;
+  left: 80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card .big-login button {
+  position: relative;
+  left: 91px;
+  width: 10%;
+  height: 40px;
+  bottom: 10px;
+  top: 2px;
+  border: none;
+  border-radius: 2rem;
+}
+.card .big-login button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card .big-login .name-input {
+  position: relative;
+  top: 10px;
+  height: 350px;
+  gap: 21px;
+}
+.card .big-login .name-input .btn-card {
+  display: flex;
+}
+.card .big-login .name-input .btn-card .btn1 {
+  text-align: center;
+  width: 80%;
+  height: 40px;
+  background: white;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  top: 20px;
+  margin-bottom: 12px;
+  margin-right: 12px;
+  position: sticky;
+  outline: none;
+}
+.card .big-login .name-input .btn-card .email {
+  width: 100%;
+}
+.card .big-login .name-input .textfeedback {
+  margin-top: 16px;
+}
+.card .big-login .name-input .textfeedback .feedback-student {
+  position: relative;
+  border-radius: 10px;
+  height: 100px;
+  width: 97%;
+  position: sticky;
+}
+.card .big-login .name-input .btn-card .submit {
+  margin-top: 12px;
+  width: 100%;
+  background: #E89909;
+  height: 56px;
+  border-radius: 16px;
+}
+.card .pictures {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  gap: 20.9px;
+}
+.card .pictures img {
+  width: 40vh;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pany {
+  display: flex;
+}
+
+.card-pich {
+  position: relative;
+  left: 20px;
+}
+
+.contact-us {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.contact-us .card-contact-us {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  bottom: 90px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  padding: 100px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.contact-us .card-contact-us .box .title {
+  font-size: 1.8rem;
+  position: relative;
+  top: 60px;
+}
+.contact-us .card-contact-us .box .info {
+  position: relative;
+  top: 60px;
+}
+.contact-us .card-contact-us .image {
+  background: gold;
+  height: 0px;
+}
+.contact-us .card-contact-us .image img {
+  width: 60%;
+  height: 110px;
+  background-size: cover;
+  position: relative;
+  bottom: 70px;
+}
+.contact-us .card-contact-us:hover {
+  transform: scale(1.05);
+}
+
+.maps iframe {
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+  height: 70vh;
 }/*# sourceMappingURL=contact.css.map */

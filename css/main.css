@@ -260,8 +260,7 @@ body {
   margin: auto;
   padding: auto;
 }
-
-header {
+body header {
   display: flex;
   height: 80vh;
   background-image: url(https://img.freepik.com/free-photo/top-view-spaghetti-with-olive-tomato-basil-leaf-herbs-white-backdrop_23-2148195083.jpg?t=st=1730255310~exp=1730258910~hmac=a8bf98a6387f6b286afc43b3c572d8c56e89a7cdb2d1fc9f0f6c3b4ea69e9fef&w=1060);
@@ -272,7 +271,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-header .head {
+body header .head {
   width: 60%;
   margin-left: 46%;
   display: flex;
@@ -280,20 +279,20 @@ header .head {
   align-items: center;
   flex-direction: column;
 }
-header .head .head-text {
+body header .head .head-text {
   font-size: 40px;
   text-align: center;
   margin-bottom: 10%;
 }
-header .head .head-text p {
+body header .head .head-text p {
   font-size: 24px;
 }
-header .head .head-text h1 {
+body header .head .head-text h1 {
   margin-bottom: 30px;
   color: #E89909;
   font-weight: bold;
 }
-header .head .searchfood {
+body header .head .searchfood {
   text-align: center;
   width: 59%;
   display: flex;
@@ -306,7 +305,7 @@ header .head .searchfood {
   border: solid 1px;
   background-color: whitesmoke;
 }
-header .head .searchfood input {
+body header .head .searchfood input {
   height: 40px;
   width: 80%;
   text-align: center;
@@ -315,7 +314,7 @@ header .head .searchfood input {
   outline: none;
   transform: translateY(-8px);
 }
-header .head .searchfood .bt {
+body header .head .searchfood .bt {
   width: 200px;
   height: 50px;
   border: none;
@@ -324,23 +323,20 @@ header .head .searchfood .bt {
   font-size: 20px;
   font-weight: bold;
 }
-header .head .searchfood .material-symbols-outlined {
+body header .head .searchfood .material-symbols-outlined {
   margin-left: 30px;
   font-size: 30px;
 }
-
-.icon-3 {
+body .icon-3 {
   transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
-  height: 64vh;
   position: absolute;
-  left: 0px;
-  top: 105vh;
+  top: 118vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.icon-3 .icon {
+body .icon-3 .icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -348,7 +344,7 @@ header .head .searchfood .material-symbols-outlined {
   height: 300px;
   width: 500px;
 }
-.icon-3 .icon .icon1 {
+body .icon-3 .icon .icon1 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   width: 300px;
   height: 200px;
@@ -358,16 +354,16 @@ header .head .searchfood .material-symbols-outlined {
   align-items: center;
   border-radius: 25px;
 }
-.icon-3 .icon .icon1:hover {
+body .icon-3 .icon .icon1:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   color: white;
 }
-.icon-3 .icon .icon1 img {
+body .icon-3 .icon .icon1 img {
   width: 150px;
   height: 150px;
 }
-.icon-3 .icon .text-icon {
+body .icon-3 .icon .text-icon {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   margin-top: 20px;
   width: 300px;
@@ -381,33 +377,31 @@ header .head .searchfood .material-symbols-outlined {
   font-weight: bold;
   font-size: 20px;
 }
-.icon-3 .icon .text-icon:hover {
+body .icon-3 .icon .text-icon:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   color: white;
 }
-
-.title {
+body .title {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 16px 0;
   margin-top: 50px;
 }
-.title .ruler {
+body .title .ruler {
   border-bottom: 3px solid;
   width: 16%;
   padding: 10px;
 }
-.title h3 {
+body .title h3 {
   font-size: 24px;
 }
-
-main {
+body main {
   margin-top: 200px;
   width: 100%;
 }
-main .fullcard {
+body main .fullcard {
   flex-wrap: wrap;
   margin: auto;
   display: flex;
@@ -417,7 +411,7 @@ main .fullcard {
   width: 90%;
   height: 500px;
 }
-main .card {
+body main .card {
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
@@ -433,7 +427,7 @@ main .card {
   gap-align-self: center;
   gap-margin-top: 10px;
 }
-main .card .incard {
+body main .card .incard {
   display: flex;
   position: absolute;
   top: 216vh;
@@ -443,16 +437,16 @@ main .card .incard {
   justify-content: space-between;
   border-radius: 30px;
 }
-main .card .incard:hover {
+body main .card .incard:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-main .card .incard .cardtext {
+body main .card .incard .cardtext {
   width: 70%;
   margin: auto;
   margin-left: 20px;
 }
-main .card .incard .btom {
+body main .card .incard .btom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,14 +460,14 @@ main .card .incard .btom {
   font-weight: bold;
   color: white;
 }
-main .card .incard .btom:hover {
+body main .card .incard .btom:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   background: #E89909;
   font-size: 20px;
   font-weight: bold;
 }
-main .twocard {
+body main .twocard {
   gap: 20px;
   display: flex;
   position: absolute;
@@ -484,16 +478,16 @@ main .twocard {
   justify-content: space-between;
   border-radius: 30px;
 }
-main .twocard:hover {
+body main .twocard:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-main .twocard .cardtext {
+body main .twocard .cardtext {
   width: 70%;
   margin: auto;
   margin-left: 20px;
 }
-main .twocard .btom {
+body main .twocard .btom {
   font-size: 20px;
   font-weight: bold;
   display: flex;
@@ -507,15 +501,14 @@ main .twocard .btom {
   margin-top: 100px;
   border-radius: 25px;
 }
-main .twocard .btom:hover {
+body main .twocard .btom:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   background: #E89909;
   font-size: 20px;
   font-weight: bold;
 }
-
-.exploremenu {
+body .exploremenu {
   margin-top: 60px;
   width: 80%;
   height: 70vh;
@@ -528,7 +521,7 @@ main .twocard .btom:hover {
   background-repeat: no-repeat;
   background-image: url(https://img.freepik.com/free-photo/high-angle-view-bruschetta-with-farfalle-raw-pasta-garlic-clove-tomato-oil-basil-leaf-against-isolated-white-background_23-2148195082.jpg?t=st=1730248723~exp=1730252323~hmac=5bb3a2796dec0e6b5cc7b6d09a34405676ab45f639a12da0588537d9cdb14819&w=826);
 }
-.exploremenu .explore {
+body .exploremenu .explore {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -542,11 +535,11 @@ main .twocard .btom:hover {
   border-radius: 0px 200px 0px 200px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-.exploremenu .explore h1 {
+body .exploremenu .explore h1 {
   font-size: 50px;
   color: white;
 }
-.exploremenu .explore .btexplore {
+body .exploremenu .explore .btexplore {
   font-size: 32px;
   margin-top: 12%;
   background: #F4C77C;
@@ -557,21 +550,20 @@ main .twocard .btom:hover {
   border-radius: 40px;
   font-weight: bold;
 }
-.exploremenu .explore .btexplore a {
+body .exploremenu .explore .btexplore a {
   color: white;
 }
-.exploremenu .explore .btexplore:hover {
+body .exploremenu .explore .btexplore:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   color: white;
   background-color: #E89909;
 }
-.exploremenu .explore:hover {
+body .exploremenu .explore:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-.booking {
+body .booking {
   background-image: url(https://img.freepik.com/premium-photo/food-cooking-preparation-background-kitchen-table-background-with-spices-herbs-vegetables-parsley-onion-garlic-tomatoes-salt-olive-oil-white-background-top-view-flatlay-copy-space_136595-20795.jpg?w=900);
   padding: 10%;
   background-size: cover;
@@ -580,7 +572,7 @@ main .twocard .btom:hover {
   width: 80%;
   height: 70vh;
 }
-.booking .booktable {
+body .booking .booktable {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   width: 80%;
   height: 70vh;
@@ -591,12 +583,12 @@ main .twocard .btom:hover {
   justify-content: space-between;
   align-items: center;
 }
-.booking .booktable img {
+body .booking .booktable img {
   width: 450px;
   height: 100%;
   border-radius: 50px 0px 0px 50px;
 }
-.booking .booktable .book {
+body .booking .booktable .book {
   transform: transform 0.3s, box-shadow 0.3s;
   display: flex;
   justify-content: center;
@@ -610,15 +602,15 @@ main .twocard .btom:hover {
   background: #F4C77C;
   border-radius: 0px 50px 50px 0px;
 }
-.booking .booktable .book h1 {
+body .booking .booktable .book h1 {
   font-size: 50px;
   color: black;
 }
-.booking .booktable .book p {
+body .booking .booktable .book p {
   margin-top: 10%;
   font-size: 26px;
 }
-.booking .booktable .book .btcheckin {
+body .booking .booktable .book .btcheckin {
   font-size: 32px;
   margin-top: 10%;
   background: #E89909;
@@ -630,13 +622,12 @@ main .twocard .btom:hover {
   font-weight: bold;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-.booking .booktable .book .btcheckin:hover {
+body .booking .booktable .book .btcheckin:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   background: #F0772C;
 }
-
-.imgcercle {
+body .imgcercle {
   padding: 10%;
   background-size: cover;
   background-position: center;
@@ -648,7 +639,7 @@ main .twocard .btom:hover {
   flex-direction: row;
   background-image: url(../images/Homeimg/ice-cream-background-with-fruits-copyspace_23-2147811071.jpg);
 }
-.imgcercle .allcercle {
+body .imgcercle .allcercle {
   justify-content: space-between;
   margin-left: 20px;
   gap: 20px;
@@ -657,7 +648,7 @@ main .twocard .btom:hover {
   flex-wrap: wrap;
   align-items: flex-start;
 }
-.imgcercle .allcercle .cercle {
+body .imgcercle .allcercle .cercle {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
@@ -666,13 +657,12 @@ main .twocard .btom:hover {
   height: 250px;
   width: 250px;
 }
-.imgcercle .allcercle .cercle img {
+body .imgcercle .allcercle .cercle img {
   border-radius: 50%;
   width: 250px;
   height: 300px;
 }
-
-.seecard {
+body .seecard {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -680,7 +670,7 @@ main .twocard .btom:hover {
   justify-content: space-between;
   align-items: center;
 }
-.seecard .divseecard {
+body .seecard .divseecard {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -688,12 +678,12 @@ main .twocard .btom:hover {
   height: 80vh;
   margin-left: 30px;
 }
-.seecard img {
+body .seecard img {
   width: 50%;
   height: 100vh;
   margin-left: 30px;
 }
-.seecard .containerseecard {
+body .seecard .containerseecard {
   display: flex;
   flex-direction: column;
   display: flex;
@@ -701,15 +691,15 @@ main .twocard .btom:hover {
   align-items: center;
   text-align: center;
 }
-.seecard .containerseecard h1 {
+body .seecard .containerseecard h1 {
   font-size: 50px;
   color: black;
 }
-.seecard .containerseecard p {
+body .seecard .containerseecard p {
   margin-top: 10%;
   font-size: 26px;
 }
-.seecard .containerseecard .btseecard {
+body .seecard .containerseecard .btseecard {
   font-size: 32px;
   margin-top: 10%;
   background: #E89909;
@@ -721,8 +711,121 @@ main .twocard .btom:hover {
   font-weight: bold;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-.seecard .containerseecard .btseecard:hover {
+body .seecard .containerseecard .btseecard:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   background: #F0772C;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  body h1 {
+    font-size: 56px;
+  }
+  body p {
+    font-size: 16px;
+  }
+  body header {
+    width: 80%;
+    height: 450px;
+  }
+  body header .head {
+    margin-top: 30px;
+  }
+  body .icon-3 {
+    top: 580px;
+  }
+  body .icon-3 .icon .icon1 {
+    width: 200px;
+    height: 200px;
+  }
+  body .icon-3 .icon .text-icon {
+    width: 200px;
+    height: 100px;
+  }
+  body .fullcard .card .incard {
+    top: 1140px;
+  }
+  body .fullcard .card .incard .cardtext p {
+    display: none;
+  }
+  body .fullcard .card img {
+    margin-top: 30px;
+  }
+  body .fullcard .card .twocard {
+    top: 1640px;
+  }
+  body .fullcard .card .twocard .cardtext p {
+    display: none;
+  }
+  body .exploremenu {
+    height: 500px;
+    width: 80%;
+  }
+  body .exploremenu .explore {
+    margin-left: 200px;
+    width: 600px;
+    height: 400px;
+  }
+  body .exploremenu .explore .btexplore {
+    text-align: center;
+    width: 40vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .exploremenu .explore .btexplore a {
+    font-size: 16px;
+  }
+  body .exploremenu .explore h1 {
+    font-size: 30px;
+  }
+  body .booking {
+    width: 80%;
+    height: 400px;
+  }
+  body .booking .booktable {
+    width: 400px;
+    height: 400px;
+  }
+  body .booking .book {
+    width: 250px;
+    height: 400px;
+  }
+  body .booking .book .btcheckin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 60px;
+    text-align: center;
+  }
+  body .booking .book h1 {
+    font-size: 56px;
+  }
+  body .booking .book p {
+    display: none;
+  }
+  body .imgcercle {
+    width: 80%;
+    height: fit-content;
+  }
+  body .imgcercle .allcercle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  body .imgcercle .allcercle .cercle {
+    width: 45%;
+  }
+  body .seecard {
+    height: fit-content;
+  }
+  body .seecard img {
+    height: 58vh;
+  }
 }/*# sourceMappingURL=main.css.map */
