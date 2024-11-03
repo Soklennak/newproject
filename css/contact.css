@@ -191,7 +191,7 @@ body .image {
 
 .feedback {
   position: relative;
-  bottom: 170px;
+  bottom: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,7 +200,7 @@ body .image {
 }
 .feedback h2 {
   position: relative;
-  font-size: 24px;
+  font-size: 4rem;
   font-weight: normal;
   text-align: center;
   color: black;
@@ -211,11 +211,12 @@ body .image {
 }
 
 .card {
+  margin-bottom: 100px;
   display: flex;
-  position: relative;
-  bottom: 140px;
+  justify-content: space-around;
 }
 .card .big-login {
+  margin-left: -80px;
   width: 30%;
   position: sticky;
   padding: 10px;
@@ -224,19 +225,6 @@ body .image {
   border-radius: 20px;
   position: relative;
   left: 80px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.card .big-login button {
-  position: relative;
-  left: 91px;
-  width: 10%;
-  height: 40px;
-  bottom: 10px;
-  top: 2px;
-  border: none;
-  border-radius: 2rem;
-}
-.card .big-login button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .card .big-login .name-input {
@@ -283,10 +271,9 @@ body .image {
   border-radius: 16px;
 }
 .card .pictures {
-  width: 50%;
+  width: 5 0%;
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
   gap: 20.9px;
 }
 .card .pictures img {
@@ -308,6 +295,7 @@ body .image {
 
 .contact-us {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
 }
@@ -317,10 +305,13 @@ body .image {
   bottom: 90px;
   background-color: #fff;
   border-radius: 8px;
-  width: 200px;
+  width: 30%;
   text-align: center;
-  padding: 100px;
+  height: 50vh;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.contact-us .card-contact-us .box .image {
+  margin-top: 80px;
 }
 .contact-us .card-contact-us .box .title {
   font-size: 1.8rem;
@@ -336,7 +327,7 @@ body .image {
   height: 0px;
 }
 .contact-us .card-contact-us .image img {
-  width: 60%;
+  width: 30%;
   height: 110px;
   background-size: cover;
   position: relative;
@@ -351,4 +342,131 @@ body .image {
   bottom: 20px;
   width: 100%;
   height: 70vh;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text-card {
+    margin-top: 40%;
+  }
+  .feedback {
+    position: relative;
+    bottom: 480px;
+  }
+  .card-contact-us {
+    width: 33%;
+    position: relative;
+    top: 20vh;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 430px;
+  }
+  .card .big-login {
+    width: 80%;
+    margin: 5px 5px;
+  }
+  .pictures {
+    margin-left: 80px;
+    width: 100%;
+    margin-top: 70px;
+  }
+  .pictures .pany {
+    width: 100%;
+    position: relative;
+    top: 10vh;
+  }
+  .pictures .card-pich {
+    width: 100%;
+    position: relative;
+  }
+  .contact-us {
+    position: relative;
+    bottom: 40vh;
+  }
+  .maps {
+    margin-bottom: 20%;
+  }
+  .maps iframe {
+    height: 80vh;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .text-card {
+    margin-top: 10%;
+  }
+  .text-card h1 {
+    font-size: 1.5rem;
+  }
+  .text-card p {
+    font-size: 1rem;
+  }
+  .feedback {
+    position: relative;
+    bottom: 150px;
+  }
+  .feedback h2 {
+    font-size: 1.5rem;
+  }
+  .card-contact-us {
+    width: 33%;
+    position: relative;
+    top: 20vh;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 100px;
+    width: 95%;
+  }
+  .card .big-login {
+    width: 100%;
+  }
+  .pictures {
+    margin-left: 20px;
+    width: 95%;
+    margin-top: 10px;
+  }
+  .pictures .pany {
+    width: 100%;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .pictures .pany img {
+    width: 95%;
+    margin-left: 16px;
+    height: 24vh;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .pictures .pany img:hover {
+    transform: scale(1.05);
+  }
+  .pictures .card-pich {
+    width: 100%;
+    position: relative;
+  }
+  .contact-us {
+    position: relative;
+    bottom: 30vh;
+  }
+  .contact-us .card-contact-us {
+    height: 40vh;
+  }
+  .contact-us .card-contact-us .box .title {
+    font-size: 16px;
+  }
+  .maps {
+    margin-bottom: 20%;
+  }
+  .maps iframe {
+    height: 80vh;
+  }
+  .footer .start-footer {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=contact.css.map */

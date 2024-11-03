@@ -58,7 +58,7 @@ body {
 }
 .feedback {
     position: relative;
-    bottom: 170px;
+    bottom: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +67,7 @@ body {
     gap: 10px;
     h2{
         position: relative;
-        font-size: 24px;
+        font-size: 4rem;
         font-weight: normal;
         text-align: center;
         color: black;
@@ -79,10 +79,13 @@ body {
     }
 }
 .card{
+    
+    margin-bottom: 100px;
     display: flex;
-    position: relative;
-    bottom: 140px;
+
+    justify-content: space-around;
         .big-login{
+            margin-left: -80px;
             width: 30%;
             position: sticky;
             padding: 10px;
@@ -92,21 +95,6 @@ body {
             position: relative;
             left: 80px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            button{
-                position: relative;
-                left: 91px;
-                width: 10%;
-                height: 40px;
-                bottom: 10px;
-                top: 2px;
-                border: none;
-
-                 
-                border-radius: 2rem;
-            }
-            button:hover{
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            }
             .name-input{
                 position: relative;
                 top: 10px;
@@ -161,10 +149,10 @@ body {
             }
         }
     .pictures{
-        width: 50%;
+        width:5 0%;
         display: flex;
         flex-direction: column;
-        margin-left: 150px;
+        
         gap: 20.9px;
         img{
             width: 40vh;
@@ -186,19 +174,26 @@ body {
 // card box
 .contact-us{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
+    
     .card-contact-us{
         transition: background-color 0.3s ease, transform 0.3s ease;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         position: relative;
         bottom: 90px;
         background-color: #fff;
         border-radius: 8px;
-        width: 200px;
+        width: 30%;
         text-align: center;
-        padding: 100px;
+        height: 50vh;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         .box{
+            .image{
+                
+                margin-top: 80px;
+                
+            }
             .title{
                 font-size: 1.8rem;
                 position: relative;
@@ -215,7 +210,7 @@ body {
             background: gold;
             height: 0px;
             img{
-                width: 60%;
+                width: 30%;
                 height: 110px;
                 background-size: cover;
                 position: relative;
@@ -240,8 +235,178 @@ body {
         height:70vh;
     }
 }
-// @media (max-width:800px){
-//      .contact-us{
+@media only screen and (min-width:768px) and (max-width:1024px){
 
-//      }
-// }
+    
+    // contact us top 
+    .text-card{
+        margin-top: 40%;
+
+    }
+    .feedback{
+        position: relative;
+        bottom: 480px;
+        
+    }
+    // 
+
+    .card-contact-us{
+        width: 33%;
+        position: relative;
+        top: 20vh;
+        
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 430px;
+       
+        .big-login{
+        width: 80%;
+        margin: 5px 5px;
+        }
+    }
+    .pictures{
+       margin-left: 80px;
+        width: 100%;
+        margin-top: 70px;
+        .pany{
+            width: 100%;
+            position: relative;
+            top: 10vh;
+           
+        }       
+        .card-pich{
+            width: 100%;
+            position: relative;
+            
+        }
+        
+    }
+    .contact-us{
+        position: relative;
+        bottom: 40vh;
+    }
+    .maps{
+        margin-bottom: 20%;
+        iframe{
+            height: 80vh;
+        }
+        
+    }
+    
+}
+// after for phone responsive
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    // contact us top 
+  
+    .text-card{
+        margin-top: 10%;
+        
+        h1{
+            font-size: 1.5rem;
+            
+            
+        }
+        p{
+            font-size: 1rem;
+            
+        }
+
+    }
+    .feedback{
+        position: relative;
+        bottom: 150px;
+        h2{
+            font-size: 1.5rem;
+        }
+        
+    }
+    // 
+
+    .card-contact-us{
+        width: 33%;
+        position: relative;
+        top: 20vh;
+        
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 100px;
+        width: 95%;
+        
+        
+       
+        .big-login{
+        width: 100%;
+        
+        
+        
+        }
+    }
+    .pictures{
+       margin-left: 20px;
+        width: 95%;
+        margin-top: 10px;
+        .pany{
+            width: 100%;
+            position: relative;
+            top: 10vh;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 95%;
+                margin-left: 16px;
+                height: 24vh;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+
+            }
+            img:hover{
+                transform: scale(1.05);
+
+
+            }
+           
+        }       
+        .card-pich{
+            width: 100%;
+            position: relative;
+            
+        }
+        
+    }
+    .contact-us{
+        position: relative;
+        bottom: 30vh;
+        .card-contact-us{
+            height: 40vh;
+            .box{
+                .title{
+                    font-size: $font-size-h5;
+                }
+            }
+        }
+    }
+    .maps{
+        margin-bottom: 20%;
+        iframe{
+            height: 80vh;
+        }
+        
+    }
+    .footer{
+        
+        .start-footer{
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+    
+}
