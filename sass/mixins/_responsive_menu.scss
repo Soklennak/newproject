@@ -1,0 +1,187 @@
+// responsive teblet menu 
+
+@media (min-width:768px) and (max-width:1024px){
+    body{
+        .container {
+            .search-food {
+                width: 50%;
+                height: 36px;
+                button {
+                    width: 24%;
+                }
+            }
+        }
+        .soup{
+            .product-food{
+                .product-card{
+                    width: 40%;
+                }
+            }
+        }
+        .footer{
+            .start-footer{
+                display: flex;
+                flex-wrap: wrap;
+                .keep-in-touch, .can-contact{
+                    width: 50%;
+                }
+
+                .find-us-in-here{
+                    ul{
+                        display: flex;
+                        gap: 32px;
+                    }
+                }
+            }
+        } 
+    }
+}
+
+
+// responsive mobile menu page
+@media (min-width:320px) and (max-width:480px){
+    body{
+        nav{
+            flex-direction: column;
+            gap: 16px;
+            .nav-right{
+                @include center;
+                gap: 4px;
+            }
+            ul{
+               gap: 16px;
+            }
+        }
+        .container {
+            h1{
+                font-size: 32px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .search-food {
+                width: 70%;
+                button {
+                    width: 70%;
+                }
+                .icon{
+                    margin-top: 4px;
+                    margin-left: 10px;
+                }
+        
+            }
+        }
+        .soup{
+            .product-food{
+                .product-card{
+                    width: 40%;
+                }
+            }
+        }
+        .menu-of-food {
+            ul {
+                li {
+                    a{
+                        font-size: 12px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+        .footer{
+            .start-footer{
+                flex-direction: column;
+                padding-left: 20px;
+                .keep-in-touch{
+                    .continue{
+                        .btn-one input{
+                            height: 28px;
+                            padding: 0 24px;
+                        }
+                        .btn-two button{
+                                height: 30px;
+                                padding: 0 10px;
+                        }
+                    }
+                }
+
+                .keep-in-touch,.can-contact,.find-us-in-here{
+                    h2{
+                        font-size: 18px;
+                    }
+                }
+                .can-contact{
+                    h2{
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 12px;
+                        margin: 12px 0;
+                    }
+                }
+
+                .find-us-in-here{
+                    ul{
+                        display: flex;
+                        gap: 32px;
+                        li{
+                            a{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .end-footer{
+                .p{
+                    font-size: 12px;
+                }
+                .end{
+                    .p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive mobile soup, fry, snack and drink page
+
+@media (min-width:320px) and (max-width:480px){
+    body{
+        .container {
+            h1{
+                font-size: 32px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .search-food {
+                width: 80%;
+                button {
+                    width: 80%;
+                }
+                .icon{
+                    margin-top: 4px;
+                    margin-left: 10px;
+                }
+        
+            }
+        }
+
+        .soup{
+            .product-food{
+                .product-card{
+                    width: 96%;
+                }
+            }
+        }
+        
+        .btn-seemore{
+           position: relative;
+           right: 60px;
+        }
+    }
+}

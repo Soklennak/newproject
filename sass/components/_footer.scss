@@ -6,7 +6,7 @@
     .start-footer{
         padding: 30px;
         display: flex;
-        padding-left: 60px;
+        padding-left: 95px;
         .keep-in-touch {
            
             p{
@@ -60,9 +60,10 @@
         @include center;
         flex-direction: column;
         .canteens{
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;           
             text-align: center;
             padding: 12px 0;
+            width: 100%;
         }
         .end {
             display: flex;

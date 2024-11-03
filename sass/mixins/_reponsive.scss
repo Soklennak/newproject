@@ -1,38 +1,5 @@
 
-@import'../components/variable';
-
-// responsive in teblet
-
-// about page
-
-
-@media (min-width:768px) and (max-width:1024px) {
-    .section{
-
-        .information-schedule {
-            
-            .information-time {
-                h5{
-                    width: 12%;
-                }
-            }
-        }
-    }
 
 
 
-    .footer{
 
-        .start-footer{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            .keep-in-touch, .can-contact,.find-us-in-here{
-                width: 30%;
-            }
-
-        }
-    }
-        
-}

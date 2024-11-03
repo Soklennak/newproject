@@ -1,26 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px;
   background: #FFFFFF;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 nav .nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 12px;
 }
 nav .nav-right .change-language {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: 1px solid;
   height: 32px;
@@ -34,17 +24,14 @@ nav .nav-right .change-language #language {
   border: none;
 }
 nav .nav-right .login {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: 1px solid;
   height: 32px;
   margin-bottom: 4px;
   border-radius: 50px;
-  width: 94px;
+  width: 108px;
   gap: 4px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
 nav .nav-right .login span, nav .nav-right .login h4 {
   padding-left: 4px;
@@ -57,8 +44,6 @@ nav .nav-right .icon-right {
   margin-top: 4px;
 }
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 36px;
 }
@@ -78,45 +63,19 @@ nav a:hover {
   color: #E89909;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .section .information-schedule .information-time h5 {
-    width: 12%;
-  }
-  .footer .start-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer .start-footer .keep-in-touch, .footer .start-footer .can-contact, .footer .start-footer .find-us-in-here {
-    width: 30%;
-  }
-}
 .footer {
   background: #FFFFFF;
 }
 .footer .start-footer {
   padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  padding-left: 60px;
+  padding-left: 95px;
 }
 .footer .start-footer .keep-in-touch p {
   width: 80%;
   margin: 24px 0;
 }
 .footer .start-footer .keep-in-touch .continue {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .footer .start-footer .keep-in-touch .continue .btn-one input {
@@ -152,30 +111,18 @@ nav a:hover {
   border-bottom: 2px solid;
 }
 .footer .end-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .footer .end-footer .canteens {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   text-align: center;
   padding: 12px 0;
+  width: 100%;
 }
 .footer .end-footer .end {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 32px;
   margin: 24px 0;
@@ -190,17 +137,10 @@ nav a:hover {
   padding: 20px;
 }
 .menu-of-food ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 .menu-of-food ul li {
   list-style: none;
@@ -218,6 +158,127 @@ nav a:hover {
   color: #FFFFFF;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .container .search-food {
+    width: 50%;
+    height: 36px;
+  }
+  body .container .search-food button {
+    width: 24%;
+  }
+  body .soup .product-food .product-card {
+    width: 40%;
+  }
+  body .footer .start-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .footer .start-footer .keep-in-touch, body .footer .start-footer .can-contact {
+    width: 50%;
+  }
+  body .footer .start-footer .find-us-in-here ul {
+    display: flex;
+    gap: 32px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+  body nav .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  body nav ul {
+    gap: 16px;
+  }
+  body .container h1 {
+    font-size: 32px;
+  }
+  body .container p {
+    font-size: 16px;
+  }
+  body .container .search-food {
+    width: 70%;
+  }
+  body .container .search-food button {
+    width: 70%;
+  }
+  body .container .search-food .icon {
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+  body .soup .product-food .product-card {
+    width: 40%;
+  }
+  body .menu-of-food ul li a {
+    font-size: 12px;
+    border-radius: 8px;
+  }
+  body .footer .start-footer {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  body .footer .start-footer .keep-in-touch .continue .btn-one input {
+    height: 28px;
+    padding: 0 24px;
+  }
+  body .footer .start-footer .keep-in-touch .continue .btn-two button {
+    height: 30px;
+    padding: 0 10px;
+  }
+  body .footer .start-footer .keep-in-touch h2, body .footer .start-footer .can-contact h2, body .footer .start-footer .find-us-in-here h2 {
+    font-size: 18px;
+  }
+  body .footer .start-footer .can-contact h2 {
+    font-size: 18px;
+  }
+  body .footer .start-footer .can-contact p {
+    font-size: 12px;
+    margin: 12px 0;
+  }
+  body .footer .start-footer .find-us-in-here ul {
+    display: flex;
+    gap: 32px;
+  }
+  body .footer .start-footer .find-us-in-here ul li a {
+    font-size: 12px;
+  }
+  body .footer .end-footer .p {
+    font-size: 12px;
+  }
+  body .footer .end-footer .end .p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body .container h1 {
+    font-size: 32px;
+  }
+  body .container p {
+    font-size: 16px;
+  }
+  body .container .search-food {
+    width: 80%;
+  }
+  body .container .search-food button {
+    width: 80%;
+  }
+  body .container .search-food .icon {
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+  body .soup .product-food .product-card {
+    width: 96%;
+  }
+  body .btn-seemore {
+    position: relative;
+    right: 60px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -245,16 +306,12 @@ body {
   font-size: 20px;
 }
 .container .search-food {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: #FFFFFF;
   width: 50%;
   height: 6vh;
   border-radius: 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 48px;
 }
 .container .search-food input {
@@ -274,15 +331,9 @@ body {
 }
 
 .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 16px 0;
 }
 .title .ruler {
@@ -292,4 +343,4 @@ body {
 }
 .title h3 {
   font-size: 24px;
-}
+}/*# sourceMappingURL=menu.css.map */
