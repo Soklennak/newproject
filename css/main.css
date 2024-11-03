@@ -755,7 +755,7 @@ body .icon-3 {
   transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
   position: absolute;
-  top: 118vh;
+  top: 120vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -822,7 +822,7 @@ body .title h3 {
   font-size: 24px;
 }
 body main {
-  margin-top: 200px;
+  margin-top: 300px;
   width: 100%;
 }
 body main .fullcard {
@@ -854,7 +854,7 @@ body main .card {
 body main .card .incard {
   display: flex;
   position: absolute;
-  top: 216vh;
+  top: 116vh;
   background: #FFFFFF;
   width: 27%;
   height: 180px;

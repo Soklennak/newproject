@@ -89,7 +89,7 @@ body{
         transition: $transition;
         width: 100%;
         position: absolute;
-        top: 118vh;    
+        top:120vh;    
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -138,7 +138,7 @@ body{
         }
     }
     main{
-        margin-top: 200px;
+        margin-top: 300px;
         width: 100%;
         .fullcard{
             flex-wrap: wrap;
@@ -149,7 +149,7 @@ body{
             }
             .card{
             transition: $transition;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             display: flex;
             flex-direction: column;
             width: 30%;
@@ -170,7 +170,7 @@ body{
                 }
                 display: flex;
                 position: absolute;
-                top: 216vh;
+                top: 116vh;
                 background: $nav-color;
                 width: 27%;
                 height: 180px;
