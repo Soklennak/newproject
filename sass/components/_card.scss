@@ -32,7 +32,7 @@ body {
         justify-content: center;
         flex-direction: column;
         padding-bottom: 25px;
-        background-color: white;
+        background-color: #fff;
   
         .product-img {
           display: flex;
@@ -57,7 +57,7 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            background-image: linear-gradient(to bottom,$soup-color);
+            background-image: linear-gradient(to bottom, $soup-color,$soup-color);
             border-radius: 15px 15px 40px 0;
             z-index: -1;
           }
@@ -70,7 +70,7 @@ body {
           z-index: 2;
   
           h2 {
-            background-image: linear-gradient(to bottom,$soup-color);
+            background-image: linear-gradient(to bottom,$soup-color,$soup-color);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-align: center;
@@ -102,10 +102,11 @@ body {
           border-radius: 10px;
           height: 36px;
           padding: 0 35px;
-          color: #fff;
+          color:#fff;
           cursor: pointer;
           font-weight: 500;
           width: 90%;
+          background: $soup-color;
         }
         button:hover {
           box-shadow:rgba(0,0,0,0.3) 0 5px 15px 0;
@@ -123,7 +124,7 @@ body {
         .product-img::before,
         button, .color-card-fry
         .product-text h2 {
-          background-image: linear-gradient(to bottom, $fry-color);
+          background-image: linear-gradient(to bottom, $fry-color,$fry-color);
         }
         .product-text {
           background: $fry-color;
@@ -135,7 +136,7 @@ body {
         .product-img::before,
         button, .color-card-snack
         .product-text h2 {
-          background-image: linear-gradient(to bottom, $snake-color);
+          background-image: linear-gradient(to bottom, $snake-color,$snake-color);
         }
         .product-text {
           background: $snake-color;

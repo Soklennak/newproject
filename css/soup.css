@@ -41,7 +41,7 @@ nav .nav-right .login {
   height: 32px;
   margin-bottom: 4px;
   border-radius: 50px;
-  width: 94px;
+  width: 108px;
   gap: 4px;
   -ms-flex-item-align: center;
       align-self: center;
@@ -78,28 +78,6 @@ nav a:hover {
   color: #E89909;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .section .information-schedule .information-time h5 {
-    width: 12%;
-  }
-  .footer .start-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer .start-footer .keep-in-touch, .footer .start-footer .can-contact, .footer .start-footer .find-us-in-here {
-    width: 30%;
-  }
-}
 .footer {
   background: #FFFFFF;
 }
@@ -108,7 +86,7 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 60px;
+  padding-left: 95px;
 }
 .footer .start-footer .keep-in-touch p {
   width: 80%;
@@ -169,9 +147,9 @@ nav a:hover {
 .footer .end-footer .canteens {
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 100%;
   text-align: center;
   padding: 12px 0;
+  width: 100%;
 }
 .footer .end-footer .end {
   display: -webkit-box;
@@ -233,7 +211,7 @@ body .product-food .product-card {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 25px;
-  background-color: white;
+  background-color: #fff;
 }
 body .product-food .product-card .product-img {
   display: -webkit-box;
@@ -261,8 +239,8 @@ body .product-food .product-card .product-img::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909));
-  background-image: linear-gradient(to bottom, #E89909);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909), to(#E89909));
+  background-image: linear-gradient(to bottom, #E89909, #E89909);
   border-radius: 15px 15px 40px 0;
   z-index: -1;
 }
@@ -273,8 +251,8 @@ body .product-food .product-card .product-text {
   z-index: 2;
 }
 body .product-food .product-card .product-text h2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909));
-  background-image: linear-gradient(to bottom, #E89909);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E89909), to(#E89909));
+  background-image: linear-gradient(to bottom, #E89909, #E89909);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -307,6 +285,7 @@ body .product-food .product-card button {
   cursor: pointer;
   font-weight: 500;
   width: 90%;
+  background: #E89909;
 }
 body .product-food .product-card button:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px 0;
@@ -325,8 +304,8 @@ body .product-food .product-card:hover {
 body .product-food .color-card-fry .product-text h2,
 body .product-food .color-card-fry .product-img::before,
 body .product-food .color-card-fry button, body .product-food .color-card-fry .color-card-fry .product-text h2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF8214));
-  background-image: linear-gradient(to bottom, #FF8214);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF8214), to(#FF8214));
+  background-image: linear-gradient(to bottom, #FF8214, #FF8214);
 }
 body .product-food .color-card-fry .product-text {
   background: #FF8214;
@@ -334,8 +313,8 @@ body .product-food .color-card-fry .product-text {
 body .product-food .color-card-snack .product-text h2,
 body .product-food .color-card-snack .product-img::before,
 body .product-food .color-card-snack button, body .product-food .color-card-snack .color-card-snack .product-text h2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFAD50));
-  background-image: linear-gradient(to bottom, #FFAD50);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFAD50), to(#FFAD50));
+  background-image: linear-gradient(to bottom, #FFAD50, #FFAD50);
 }
 body .product-food .color-card-snack .product-text {
   background: #FFAD50;
@@ -373,6 +352,146 @@ body .product-food .color-card-snack .product-text {
   color: #FFFFFF;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .container .search-food {
+    width: 50%;
+    height: 36px;
+  }
+  body .container .search-food button {
+    width: 24%;
+  }
+  body .soup .product-food .product-card {
+    width: 40%;
+  }
+  body .footer .start-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .footer .start-footer .keep-in-touch, body .footer .start-footer .can-contact {
+    width: 50%;
+  }
+  body .footer .start-footer .find-us-in-here ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  body nav .nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4px;
+  }
+  body nav ul {
+    gap: 16px;
+  }
+  body .container h1 {
+    font-size: 32px;
+  }
+  body .container p {
+    font-size: 16px;
+  }
+  body .container .search-food {
+    width: 70%;
+  }
+  body .container .search-food button {
+    width: 70%;
+  }
+  body .container .search-food .icon {
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+  body .soup .product-food .product-card {
+    width: 40%;
+  }
+  body .menu-of-food ul li a {
+    font-size: 12px;
+    border-radius: 8px;
+  }
+  body .footer .start-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 20px;
+  }
+  body .footer .start-footer .keep-in-touch .continue .btn-one input {
+    height: 28px;
+    padding: 0 24px;
+  }
+  body .footer .start-footer .keep-in-touch .continue .btn-two button {
+    height: 30px;
+    padding: 0 10px;
+  }
+  body .footer .start-footer .keep-in-touch h2, body .footer .start-footer .can-contact h2, body .footer .start-footer .find-us-in-here h2 {
+    font-size: 18px;
+  }
+  body .footer .start-footer .can-contact h2 {
+    font-size: 18px;
+  }
+  body .footer .start-footer .can-contact p {
+    font-size: 12px;
+    margin: 12px 0;
+  }
+  body .footer .start-footer .find-us-in-here ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px;
+  }
+  body .footer .start-footer .find-us-in-here ul li a {
+    font-size: 12px;
+  }
+  body .footer .end-footer .p {
+    font-size: 12px;
+  }
+  body .footer .end-footer .end .p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body .container h1 {
+    font-size: 32px;
+  }
+  body .container p {
+    font-size: 16px;
+  }
+  body .container .search-food {
+    width: 80%;
+  }
+  body .container .search-food button {
+    width: 80%;
+  }
+  body .container .search-food .icon {
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+  body .soup .product-food .product-card {
+    width: 96%;
+  }
+  body .btn-seemore {
+    position: relative;
+    right: 60px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
